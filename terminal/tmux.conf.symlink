@@ -1,0 +1,9 @@
+#Make ctrl+a the main tmux command
+unbind C-b
+unbind C-a
+set -g prefix C-a
+
+# Give nice shortcuts for splitting windows
+unbind %
+bind | split-window -h
+bind - split-window -v

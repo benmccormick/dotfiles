@@ -1,5 +1,3 @@
-" Vim
-" ===
 " Source ~/.vimrc.before if it exists
 if filereadable(expand('~/.vimrc.before'))
   source ~/.vimrc.before
@@ -17,10 +15,9 @@ set secure
 
 " This loads all the plugins in ~/.vim/bundle
 " Use tpope's pathogen plugin to manage all other plugins
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
-
 
 
 
@@ -35,12 +32,11 @@ set t_Co=256
 " ========
 colorscheme solarized
 set background=dark
-
+let g:solarized_termcolors=256
 " General Config
 " ==============
 
 let mapleader='\'
-set gfn=Menlo:h14
 set encoding=utf-8
 set number                      " Line numbers are good
 set backspace=indent,eol,start  " Allow backspace in insert mode
@@ -78,6 +74,9 @@ set ttymouse=xterm2
 set incsearch        " Find the next match as we type the search
 set hlsearch         " Hilight searches by default
 set viminfo='100,f1  " Save up to 100 marks, enable capital marks
+" c is current directory, not what we want
+" let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_custom_ignore = '\v\.(swp|xml|prop|txt|jar|class)'
 
 " Turn Off Swap Files
 " ===================
@@ -106,9 +105,9 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 filetype plugin on
@@ -154,3 +153,6 @@ set statusline+=\                               " Set ending space
 
 " Plugin overrides
 source ~/.vim/tmux.vim
+
+" Markdown options
+let g:vim_markdown_folding_disabled=1

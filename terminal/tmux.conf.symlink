@@ -1,15 +1,29 @@
+# setup VI mode
 set-window-option -g mode-keys vi
+# mak zsh the default shell
 set-option -g default-shell /bin/zsh
 #Make ctrl+a the main tmux command
 unbind C-b
 unbind C-a
 set -g prefix C-a
+bind C-a send-prefix 
+
+# change the default delay before passing on keystrokes
+set -s escape-time 1
+# start panes and windows at 1
+set -g base-index 1
+
 
 # Give nice shortcuts for splitting windows
 unbind %
 bind | split-window -h
 bind _ split-window -v
+
+# shortcut for reloading tmux config
+bind r source-file ~/.tmux.conf \; display "Config Reloaded"
+
 # Smart pane switching with awareness of vim splits
+
 bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)vim$' && tmux send-keys C-h) || tmux select-pane -L"
 bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)vim$' && tmux send-keys C-j) || tmux select-pane -D"
 bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)vim$' && tmux send-keys C-k) || tmux select-pane -U"
@@ -18,9 +32,38 @@ bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE 
 
 #easy resize
 
-bind-key + resize-pane -D 3
-bind-key / resize-pane -L 3
-bind-key - resize-pane -U 3
-bind-key * resize-pane -R 3
+bind-key -r + resize-pane -D 3
+bind-key -r / resize-pane -L 3
+bind-key -r - resize-pane -U 3
+bind-key -r * resize-pane -R 3
 
+# set the TERM value
 set -g default-terminal "screen-256color"
+
+# Mouse mode (mostly disabled for now, but allow scrolling a pane)
+set -g mode-mouse on
+# set -g mouse-select-pane on
+# set -g mouse-resize-pane on
+# set -g mouse select-window on
+
+# Colors
+
+setw -g status-fg colour240
+setw -g status-bg colour230
+setw -g window-status-fg colour33
+setw -g window-status-bg colour235
+setw -g window-status-attr dim
+
+setw -g window-status-current-fg colour64
+setw -g window-status-current-bg colour234
+setw -g window-status-current-attr bright
+
+set -g pane-border-fg colour230
+set -g pane-border-bg default
+
+set -g pane-active-border-fg colour160
+set -g pane-active-border-bg default  
+
+set -g message-fg colour240
+set -g message-bg colour254
+set -g message-attr bright

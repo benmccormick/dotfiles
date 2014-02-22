@@ -1,0 +1,7 @@
+function vim -d "vim should get the colors from the terminal"
+  command mvim -v  $argv
+end
+
+function mvim -d "vim should get the colors from the terminal"
+  command mvim  $argv
+end

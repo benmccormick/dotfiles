@@ -1,0 +1,468 @@
+function safari_app -d "Safari (Productivity)"
+  /usr/bin/open -a /Applications/Safari\.app $argv
+end
+
+function firefox_app -d "Firefox.app (Productivity)"
+  /usr/bin/open -a /Applications/Firefox\.app $argv
+end
+
+function printer_simulator_app -d "Printer Simulator"
+  /usr/bin/open -a /Applications/Xcode\.app/Contents/Applications/Printer\ Simulator\.app $argv
+end
+
+function instruments_app -d "Instruments"
+  /usr/bin/open -a /Applications/Xcode\.app/Contents/Applications/Instruments\.app $argv
+end
+
+function filemerge_app -d "FileMerge"
+  /usr/bin/open -a /Applications/Xcode\.app/Contents/Applications/FileMerge\.app $argv
+end
+
+function application_loader_app -d "Application Loader"
+  /usr/bin/open -a /Applications/Xcode\.app/Contents/Applications/Application\ Loader\.app $argv
+end
+
+function accessibility_inspector_app -d "Accessibility Inspector"
+  /usr/bin/open -a /Applications/Xcode\.app/Contents/Applications/Accessibility\ Inspector\.app $argv
+end
+
+function xcode_app -d "Xcode (Developer Tools)"
+  /usr/bin/open -a /Applications/Xcode\.app $argv
+end
+
+function marked_app -d "Marked (Productivity)"
+  /usr/bin/open -a /Applications/Marked\.app $argv
+end
+
+function iphoto_app -d "iPhoto (Photography)"
+  /usr/bin/open -a /Applications/iPhoto\.app $argv
+end
+
+function color_picker_app -d "Color Picker (Utilities)"
+  /usr/bin/open -a /Applications/Color\ Picker\.app $argv
+end
+
+function app_store_app -d "App Store"
+  /usr/bin/open -a /Applications/App\ Store\.app $argv
+end
+
+function filezilla_app -d "FileZilla.app"
+  /usr/bin/open -a /Applications/FileZilla\.app $argv
+end
+
+function google_chrome_app -d "Google Chrome"
+  /usr/bin/open -a /Applications/Google\ Chrome\.app $argv
+end
+
+function activity_monitor_app -d "Activity Monitor (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Activity\ Monitor\.app $argv
+end
+
+function system_information_app -d "System Information (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/System\ Information\.app $argv
+end
+
+function org_eclipse_equinox_app -d "org.eclipse.equinox.app"
+  /usr/bin/open -a /Applications/eclipse/configuration/org\.eclipse\.equinox\.app $argv
+end
+
+function eclipse_app -d "Eclipse.app"
+  /usr/bin/open -a /Applications/eclipse/Eclipse\.app $argv
+end
+
+function microsoft_excel_app -d "Microsoft Excel (Productivity)"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Excel\.app $argv
+end
+
+function epson592889__workforce_630__app -d "EPSON592889 (WorkForce 630)"
+  /usr/bin/open -a /Users/ben/Library/Printers/EPSON592889\ \(WorkForce\ 630\)\.app $argv
+end
+
+function preview_app -d "Preview (Productivity)"
+  /usr/bin/open -a /Applications/Preview\.app $argv
+end
+
+function the_unarchiver_app -d "The Unarchiver"
+  /usr/bin/open -a /Applications/The\ Unarchiver\.app $argv
+end
+
+function skydrive_app -d "SkyDrive (Productivity)"
+  /usr/bin/open -a /Applications/SkyDrive\.app $argv
+end
+
+function dropbox_app -d "Dropbox.app"
+  /usr/bin/open -a /Applications/Dropbox\.app $argv
+end
+
+function utorrent_app -d "uTorrent.app"
+  /usr/bin/open -a /Applications/uTorrent\.app $argv
+end
+
+function skitch_app -d "Skitch (Productivity)"
+  /usr/bin/open -a /Applications/Skitch\.app $argv
+end
+
+function calendar_app -d "Calendar (Productivity)"
+  /usr/bin/open -a /Applications/Calendar\.app $argv
+end
+
+function twitter_app -d "Twitter (Social Networking)"
+  /usr/bin/open -a /Applications/Twitter\.app $argv
+end
+
+function messages_app -d "Messages (Social Networking)"
+  /usr/bin/open -a /Applications/Messages\.app $argv
+end
+
+function itunes_app -d "iTunes (Music)"
+  /usr/bin/open -a /Applications/iTunes\.app $argv
+end
+
+function reeder_app -d "Reeder (News)"
+  /usr/bin/open -a /Applications/Reeder\.app $argv
+end
+
+function font_book_app -d "Font Book (Utilities)"
+  /usr/bin/open -a /Applications/Font\ Book\.app $argv
+end
+
+function sublime_text_app -d "Sublime Text.app"
+  /usr/bin/open -a /Applications/Sublime\ Text\.app $argv
+end
+
+function sparrow_app -d "Sparrow (Productivity)"
+  /usr/bin/open -a /Applications/Sparrow\.app $argv
+end
+
+function terminal_app -d "Terminal (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Terminal\.app $argv
+end
+
+function textedit_app -d "TextEdit (Productivity)"
+  /usr/bin/open -a /Applications/TextEdit\.app $argv
+end
+
+function macvim_app -d "MacVim.app"
+  /usr/bin/open -a /Applications/MacVim\.app $argv
+end
+
+function system_preferences_app -d "System Preferences (Utilities)"
+  /usr/bin/open -a /Applications/System\ Preferences\.app $argv
+end
+
+function simple_comic_app -d "Simple Comic.app"
+  /usr/bin/open -a /Applications/Simple\ Comic\.app $argv
+end
+
+function voiceover_utility_app -d "VoiceOver Utility (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/VoiceOver\ Utility\.app $argv
+end
+
+function facetime_app -d "FaceTime (Social Networking)"
+  /usr/bin/open -a /Applications/FaceTime\.app $argv
+end
+
+function automator_app -d "Automator (Utilities)"
+  /usr/bin/open -a /Applications/Automator\.app $argv
+end
+
+function disk_utility_app -d "Disk Utility (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Disk\ Utility\.app $argv
+end
+
+function applescript_editor_app -d "AppleScript Editor (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/AppleScript\ Editor\.app $argv
+end
+
+function boot_camp_assistant_app -d "Boot Camp Assistant (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Boot\ Camp\ Assistant\.app $argv
+end
+
+function game_center_app -d "Game Center (Games)"
+  /usr/bin/open -a /Applications/Game\ Center\.app $argv
+end
+
+function reminders_app -d "Reminders (Productivity)"
+  /usr/bin/open -a /Applications/Reminders\.app $argv
+end
+
+function bluetooth_file_exchange_app -d "Bluetooth File Exchange (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Bluetooth\ File\ Exchange\.app $argv
+end
+
+function chess_app -d "Chess (Board Games)"
+  /usr/bin/open -a /Applications/Chess\.app $argv
+end
+
+function quicktime_player_app -d "QuickTime Player (Video)"
+  /usr/bin/open -a /Applications/QuickTime\ Player\.app $argv
+end
+
+function notes_app -d "Notes"
+  /usr/bin/open -a /Applications/Notes\.app $argv
+end
+
+function migration_assistant_app -d "Migration Assistant (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Migration\ Assistant\.app $argv
+end
+
+function mail_app -d "Mail (Productivity)"
+  /usr/bin/open -a /Applications/Mail\.app $argv
+end
+
+function contacts_app -d "Contacts (Productivity)"
+  /usr/bin/open -a /Applications/Contacts\.app $argv
+end
+
+function dvd_player_app -d "DVD Player (Video)"
+  /usr/bin/open -a /Applications/DVD\ Player\.app $argv
+end
+
+function photo_booth_app -d "Photo Booth (Entertainment)"
+  /usr/bin/open -a /Applications/Photo\ Booth\.app $argv
+end
+
+function wunderlist_app -d "Wunderlist (Productivity)"
+  /usr/bin/open -a /Applications/Wunderlist\.app $argv
+end
+
+function kindle_app -d "Kindle (Reference)"
+  /usr/bin/open -a /Applications/Kindle\.app $argv
+end
+
+function microsoft_word_app -d "Microsoft Word (Productivity)"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Word\.app $argv
+end
+
+function office365service_app -d "Office365Service"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Office365Service\.app $argv
+end
+
+function syncservicesagent_app -d "SyncServicesAgent"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/SyncServicesAgent\.app $argv
+end
+
+function open_xml_for_excel_app -d "Open XML for Excel"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Open\ XML\ for\ Excel\.app $argv
+end
+
+function my_day_app -d "My Day"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/My\ Day\.app $argv
+end
+
+function microsoft_upload_center_app -d "Microsoft Upload Center"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Upload\ Center\.app $argv
+end
+
+function microsoft_query_app -d "Microsoft Query"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Query\.app $argv
+end
+
+function microsoft_office_reminders_app -d "Microsoft Office Reminders"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Office\ Reminders\.app $argv
+end
+
+function microsoft_graph_app -d "Microsoft Graph"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Graph\.app $argv
+end
+
+function microsoft_database_utility_app -d "Microsoft Database Utility"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Database\ Utility\.app $argv
+end
+
+function microsoft_database_daemon_app -d "Microsoft Database Daemon"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Database\ Daemon\.app $argv
+end
+
+function microsoft_clip_gallery_app -d "Microsoft Clip Gallery"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Clip\ Gallery\.app $argv
+end
+
+function microsoft_chart_converter_app -d "Microsoft Chart Converter"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Chart\ Converter\.app $argv
+end
+
+function microsoft_alerts_daemon_app -d "Microsoft Alerts Daemon"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Alerts\ Daemon\.app $argv
+end
+
+function equation_editor_app -d "Equation Editor"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Equation\ Editor\.app $argv
+end
+
+function solver_app -d "Solver"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Add\-Ins/Solver\.app $argv
+end
+
+function microsoft_powerpoint_app -d "Microsoft PowerPoint (Productivity)"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ PowerPoint\.app $argv
+end
+
+function microsoft_outlook_app -d "Microsoft Outlook"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Outlook\.app $argv
+end
+
+function microsoft_document_connection_app -d "Microsoft Document Connection"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Document\ Connection\.app $argv
+end
+
+function microsoft_language_register_app -d "Microsoft Language Register"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Additional\ Tools/Microsoft\ Language\ Register/Microsoft\ Language\ Register\.app $argv
+end
+
+function microsoft_office_setup_assistant_app -d "Microsoft Office Setup Assistant"
+  /usr/bin/open -a /Applications/Microsoft\ Office\ 2011/Office/Microsoft\ Office\ Setup\ Assistant\.app $argv
+end
+
+function microsoft_messenger_app -d "Microsoft Messenger"
+  /usr/bin/open -a /Applications/Microsoft\ Messenger\.app $argv
+end
+
+function remote_desktop_connection_app -d "Remote Desktop Connection"
+  /usr/bin/open -a /Applications/Remote\ Desktop\ Connection\.app $argv
+end
+
+function securedownloadmanager_app -d "SecureDownloadManager.app"
+  /usr/bin/open -a /Users/ben/Applications/SecureDownloadManager\.app $argv
+end
+
+function cyberduck_app -d "Cyberduck.app (Productivity)"
+  /usr/bin/open -a /Applications/Cyberduck\.app $argv
+end
+
+function sublime_text__3010__app -d "Sublime Text (3010).app"
+  /usr/bin/open -a /Users/ben/\.Trash/Sublime\ Text\ \(3010\)\.app $argv
+end
+
+function github_app -d "GitHub.app (Developer Tools)"
+  /usr/bin/open -a /Users/ben/Downloads/GitHub\.app $argv
+end
+
+function scrivwatcher_app -d "ScrivWatcher"
+  /usr/bin/open -a /Users/ben/Downloads/MarkedBonusPack1\.5/Watchers/ScrivWatcher\.app $argv
+end
+
+function airport_utility_app -d "AirPort Utility (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/AirPort\ Utility\.app $argv
+end
+
+function things_app -d "Things.app"
+  /usr/bin/open -a /Applications/Things\.app $argv
+end
+
+function things_2_app -d "Things 2.app"
+  /usr/bin/open -a /Users/ben/Downloads/Things\ 2\.app $argv
+end
+
+function sourcetree_app -d "SourceTree (Developer Tools)"
+  /usr/bin/open -a /Applications/SourceTree\.app $argv
+end
+
+function go2shell_app -d "Go2Shell (Developer Tools)"
+  /usr/bin/open -a /Applications/Go2Shell\.app $argv
+end
+
+function vmware_fusion_app -d "VMware Fusion (Productivity)"
+  /usr/bin/open -a /Applications/VMware\ Fusion\.app $argv
+end
+
+function git_gui_app -d "Git Gui"
+  /usr/bin/open -a /usr/share/git\-gui/lib/Git\ Gui\.app $argv
+end
+
+function imovie_app -d "iMovie (Video)"
+  /usr/bin/open -a /Applications/iMovie\.app $argv
+end
+
+function garageband_app -d "GarageBand (Music)"
+  /usr/bin/open -a /Applications/GarageBand\.app $argv
+end
+
+function stickies_app -d "Stickies (Productivity)"
+  /usr/bin/open -a /Applications/Stickies\.app $argv
+end
+
+function image_capture_app -d "Image Capture (Utilities)"
+  /usr/bin/open -a /Applications/Image\ Capture\.app $argv
+end
+
+function time_machine_app -d "Time Machine (Utilities)"
+  /usr/bin/open -a /Applications/Time\ Machine\.app $argv
+end
+
+function dictionary_app -d "Dictionary (Reference)"
+  /usr/bin/open -a /Applications/Dictionary\.app $argv
+end
+
+function x11_app -d "X11 (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/X11\.app $argv
+end
+
+function keychain_access_app -d "Keychain Access (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Keychain\ Access\.app $argv
+end
+
+function grab_app -d "Grab (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Grab\.app $argv
+end
+
+function dashboard_app -d "Dashboard (Utilities)"
+  /usr/bin/open -a /Applications/Dashboard\.app $argv
+end
+
+function digitalcolor_meter_app -d "DigitalColor Meter (Productivity)"
+  /usr/bin/open -a /Applications/Utilities/DigitalColor\ Meter\.app $argv
+end
+
+function console_app -d "Console (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Console\.app $argv
+end
+
+function colorsync_utility_app -d "ColorSync Utility (Productivity)"
+  /usr/bin/open -a /Applications/Utilities/ColorSync\ Utility\.app $argv
+end
+
+function audio_midi_setup_app -d "Audio MIDI Setup (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Audio\ MIDI\ Setup\.app $argv
+end
+
+function java_visualvm_app -d "Java VisualVM"
+  /usr/bin/open -a /usr/share/java/Tools/Java\ VisualVM\.app $argv
+end
+
+function jar_bundler_app -d "Jar Bundler"
+  /usr/bin/open -a /usr/share/java/Tools/Jar\ Bundler\.app $argv
+end
+
+function applet_launcher_app -d "Applet Launcher"
+  /usr/bin/open -a /usr/share/java/Tools/Applet\ Launcher\.app $argv
+end
+
+function grapher_app -d "Grapher (Education)"
+  /usr/bin/open -a /Applications/Utilities/Grapher\.app $argv
+end
+
+function mission_control_app -d "Mission Control (Utilities)"
+  /usr/bin/open -a /Applications/Mission\ Control\.app $argv
+end
+
+function launchpad_app -d "Launchpad (Utilities)"
+  /usr/bin/open -a /Applications/Launchpad\.app $argv
+end
+
+function calculator_app -d "Calculator (Utilities)"
+  /usr/bin/open -a /Applications/Calculator\.app $argv
+end
+
+function network_utility_app -d "Network Utility (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/Network\ Utility\.app $argv
+end
+
+function raid_utility_app -d "RAID Utility (Utilities)"
+  /usr/bin/open -a /Applications/Utilities/RAID\ Utility\.app $argv
+end
+
+function miniterm_app -d "MiniTerm"
+  /usr/bin/open -a /usr/libexec/MiniTerm\.app $argv
+end
+

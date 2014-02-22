@@ -1,12 +1,13 @@
-# setup VI mode
+#setup VI mode
 set-window-option -g mode-keys vi
-# mak zsh the default shell
-set-option -g default-shell /bin/zsh
 #Make ctrl+a the main tmux command
 unbind C-b
 unbind C-a
 set -g prefix C-a
 bind C-a send-prefix 
+
+# We want to go fish
+set-option -g default-shell /usr/local/bin/fish
 
 # change the default delay before passing on keystrokes
 set -s escape-time 1
@@ -67,3 +68,7 @@ set -g pane-active-border-bg default
 set -g message-fg colour240
 set -g message-bg colour254
 set -g message-attr bright
+
+# Make copy and paste work on OSX
+set-option -g default-command "reattach-to-user-namespace -l fish"
+source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf"

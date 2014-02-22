@@ -3,41 +3,67 @@ if filereadable(expand('~/.vimrc.before'))
   source ~/.vimrc.before
 endif
 
+" Set shell to zsh (fish and VIM don't play well together)
+set shell=zsh
 
 " Per-directory .vimrc files
 set exrc
 set secure
 
 
+filetype off
 
-" Pathogen Initialization
-" =======================
+"Vundle instead of Pathogen
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-" This loads all the plugins in ~/.vim/bundle
-" Use tpope's pathogen plugin to manage all other plugins
-"runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+Bundle 'gmarik/vundle'
 
+"My bundles
 
+"functionality
+Bundle 'tpope/vim-fugitive'
+Bundle 'chriskempson/base16-vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'rking/ag'
+Bundle 'scrooloose/nerdtree'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'ervandew/supertab'
+Bundle 'marijnh/tern_for_vim'
+Bundle 'mikewest/vimroom'
+Bundle 'bling/vim-airline'
+Bundle 'reedes/vim-thematic'
+Bundle 'scrooloose/syntastic'
+Bundle 'airblade/vim-gitgutter'
 
-" Syntax
-" ======
+"Syntax
+Bundle 'groenewege/vim-less'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'dag/vim-fish'
+Bundle 'elzr/vim-json'
+Bundle 'mustache/vim-mustache-handlebars'
+
+filetype plugin indent on
 
 syntax on
 syntax enable
 set t_Co=256
 
-" Colors!!
+" Appearance
 " ========
-colorscheme solarized
+"let base16colorspace=256 " Access colors in 256 colorspace
+colorscheme base16-eighties
 set background=dark
-let g:solarized_termcolors=256
+set guifont=Source\ Code\ Pro\ For\ Powerline:h13
+let g:airline_powerline_fonts = 1
 " General Config
 " ==============
 
 let mapleader='\'
 set encoding=utf-8
+set relativenumber              " Use relative numbers for all but the current line
 set number                      " Line numbers are good
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
@@ -72,7 +98,7 @@ set ttymouse=xterm2
 " ===============
 
 set incsearch        " Find the next match as we type the search
-set hlsearch         " Hilight searches by default
+set hlsearch         " Highlight searches by default
 set viminfo='100,f1  " Save up to 100 marks, enable capital marks
 " c is current directory, not what we want
 " let g:ctrlp_working_path_mode = 'c'
@@ -105,10 +131,11 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
+inoremap <D-v> ^O:set paste<Enter>^R+^O:set nopaste<Enter>
 
 filetype plugin on
 filetype indent on
@@ -116,7 +143,7 @@ filetype indent on
 set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visually
 set nowrap                            " Don't wrap lines
 set linebreak                         " Wrap lines at convenient points
-
+autocmd Filetype mkd setlocal wrap
 " Folds
 " =====
 
@@ -150,9 +177,17 @@ set statusline+=\ %f\ %m\ %r                    " Show filename/path
 set statusline+=%=                              " Set right-side status info after this line
 set statusline+=%l/%L:%v                        " Set <line number>/<total lines>:<column>
 set statusline+=\                               " Set ending space
+set noshowmode                                  " Let powerline handle the mode display
+
 
 " Plugin overrides
 source ~/.vim/tmux.vim
 
-" Markdown options
+" CTRL+P options
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" Airline options
+let g:airline#extensions#tabline#enabled = 1 
+
+"Markdown options
 let g:vim_markdown_folding_disabled=1

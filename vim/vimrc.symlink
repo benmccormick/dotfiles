@@ -1,69 +1,101 @@
-" Source ~/.vimrc.before if it exists
-if filereadable(expand('~/.vimrc.before'))
-  source ~/.vimrc.before
-endif
+"Ben McCormick's vimrc
+
 
 " Set shell to zsh (fish and VIM don't play well together)
 set shell=zsh
 
-" Per-directory .vimrc files
-set exrc
-set secure
-
-
+"Setup Vundle For Package Management
 filetype off
-
-"Vundle instead of Pathogen
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 Bundle 'gmarik/vundle'
 
 "My bundles
 
-"functionality
-Bundle 'tpope/vim-fugitive'
+" Themes
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/base16-vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'rking/ag'
-Bundle 'scrooloose/nerdtree'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'ervandew/supertab'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'mikewest/vimroom'
-Bundle 'bling/vim-airline'
-Bundle 'reedes/vim-thematic'
-Bundle 'scrooloose/syntastic'
-Bundle 'airblade/vim-gitgutter'
 
-"Syntax
+" Syntax
 Bundle 'groenewege/vim-less'
+Bundle 'skammer/vim-css-color'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'dag/vim-fish'
 Bundle 'elzr/vim-json'
 Bundle 'mustache/vim-mustache-handlebars'
+Bundle "lepture/vim-jinja"
 
+" Functionality
+
+" ### Indispensable
+
+" ctrlp is file fuzzy search
+Bundle 'kien/ctrlp.vim'
+" Ack.vim uses ack to search within files
+Bundle 'mileszs/ack.vim'
+"Airline provides a stylish appearance for the styleline
+Bundle 'bling/vim-airline'
+" Syntastic provides syntax info
+Bundle 'scrooloose/syntastic'
+"Show git info in the gutter, sad that it and syntastic fight for space though
+Bundle 'airblade/vim-gitgutter'
+"Integrate with tmux
+Bundle 'christoomey/vim-tmux-navigator'
+
+" ### Use sometime
+
+" Nerdtree provides a file explorer, which is sometimes useful.
+" Mostly ctrlp handles file finding though
+Bundle 'scrooloose/nerdtree'
+" fugitive provides git bindings in Vim.  Don't use too much, but useful for
+" blame
+Bundle 'tpope/vim-fugitive'
+" Surround is useful for adding surrounding tags to elements (especially html)
+Bundle 'tpope/vim-surround'
+" Allows vim-surround to be used with . command
+Bundle 'tpope/vim-repeat'
+" Moves all autocompletion into one tab format
+"Bundle 'ervandew/supertab'
+
+" Experimenting with 
+
+Bundle 'marijnh/tern_for_vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'SirVer/ultisnips'
+Bundle 'Valloric/YouCompleteMe'
+
+"End Vundle
+call vundle#end()
 filetype plugin indent on
 
-syntax on
-syntax enable
-set t_Co=256
 
 " Appearance
 " ========
-"let base16colorspace=256 " Access colors in 256 colorspace
-colorscheme base16-eighties
+
+"We want syntax highlighting in 256 colors
+syntax on
+syntax enable
+set t_Co=256
+" Use solarized for the color scheme
+colorscheme solarized
+if has('gui_running')
 set background=dark
-set guifont=Source\ Code\ Pro\ For\ Powerline:h13
+else
+set background=light
+endif
+"Use Source Code Pro for the font
+set guifont=Source\ Code\ Pro\ For\ Powerline:h12
 let g:airline_powerline_fonts = 1
+
 " General Config
 " ==============
 
 let mapleader='\'
 set encoding=utf-8
-set relativenumber              " Use relative numbers for all but the current line
 set number                      " Line numbers are good
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
@@ -72,23 +104,18 @@ set showmode                    " Show current mode down the bottom
 set gcr=a:blinkon0              " Disable cursor blink
 set autoread                    " Reload files changed outside vim
 set laststatus=2                " Always show status line
-set clipboard=unnamed           " Use system clipboard
 set hidden                      " Buffers can exist in the background
 set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
-"set shortmess=filnxtToOI       " see :help shortmess
-                                " http://items.sjbach.com/319/configuring-vim-right
-
+set shortmess=filnxtToOI       " see :help shortmess
 
 " Mouse
 " ======
 
 " Send more characters for redraws
 set ttyfast
-
 " Enable mouse use in all modes
 set mouse=a
-
 " Set this to the name of your terminal that supports mouse codes.
 " Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
 set ttymouse=xterm2
@@ -100,9 +127,6 @@ set ttymouse=xterm2
 set incsearch        " Find the next match as we type the search
 set hlsearch         " Highlight searches by default
 set viminfo='100,f1  " Save up to 100 marks, enable capital marks
-" c is current directory, not what we want
-" let g:ctrlp_working_path_mode = 'c'
-let g:ctrlp_custom_ignore = '\v\.(swp|xml|prop|txt|jar|class)'
 
 " Turn Off Swap Files
 " ===================
@@ -131,19 +155,16 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
-inoremap <D-v> ^O:set paste<Enter>^R+^O:set nopaste<Enter>
-
-filetype plugin on
-filetype indent on
 
 set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visually
 set nowrap                            " Don't wrap lines
-set linebreak                         " Wrap lines at convenient points
 autocmd Filetype mkd setlocal wrap
+set linebreak                         " Wrap lines at convenient points for markdown only
+
 " Folds
 " =====
 
@@ -179,15 +200,36 @@ set statusline+=%l/%L:%v                        " Set <line number>/<total lines
 set statusline+=\                               " Set ending space
 set noshowmode                                  " Let powerline handle the mode display
 
+"Plugin Options
 
-" Plugin overrides
-source ~/.vim/tmux.vim
 
 " CTRL+P options
 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = {
+    \ 'file': '\.pyc$',
+    \ 'dir': 'node_modules\|\.DS_Store$\|\.git$'
+    \ }
 " Airline options
-let g:airline#extensions#tabline#enabled = 1 
+let g:airline#extensions#tabline#enabled = 1
 
 "Markdown options
 let g:vim_markdown_folding_disabled=1
+
+"NerdTree Options
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
+
+"YouCompleteMe options
+"let g:ycm_min_num_of_chars_for_completion = 3
+
+"jinja config
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+
+"Utisnips config
+
+"" Trigger configuration. Can't use tab with YouCompleteMe
+let g:UltiSnipsExpandTrigger=">"
+
+" Edit snippets in a split
+let g:UltiSnipsEditSplit="vertical"
+

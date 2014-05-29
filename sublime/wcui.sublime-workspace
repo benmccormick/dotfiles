@@ -1,0 +1,601 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"expanded",
+				"expanded_menu_width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/action_center/idea.js",
+			"settings":
+			{
+				"buffer_size": 3067,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/models/campaign.js",
+			"settings":
+			{
+				"buffer_size": 1447,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/lib/string_util.js",
+			"settings":
+			{
+				"buffer_size": 858,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/graph/pie.js",
+			"settings":
+			{
+				"buffer_size": 7224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/base.js",
+			"settings":
+			{
+				"buffer_size": 2162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/layout.less",
+			"settings":
+			{
+				"buffer_size": 18881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/ascmockup/index.html",
+			"settings":
+			{
+				"buffer_size": 9743,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/action_center.js",
+			"settings":
+			{
+				"buffer_size": 180,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 411,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package control in",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Enable Package"
+			],
+			[
+				"syntax six",
+				"Set Syntax: Six"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ben/Downloads/client_secret_462365338957-rohuimlarabao9adcm2in7a9blqkt09j.apps.googleusercontent.com.json",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/layout.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui.egg-info/PKG-INFO",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/setup.cfg",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/setup.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/templates/analytics/panel_navigation.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/base.js",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/Rails/HTML (Rails).tmLanguage",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Installed Packages/Six - Future JavaScript Syntax.sublime-package",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/vendor/backbone.js",
+		"/Users/ben/Dropbox/Sublime/Preferences.sublime-settings",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/analytics.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/analytics.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/docs/webapi/chart_alv_by_number_of_purchases.rst",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/action_center.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/application.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"left",
+			"overflow:hidden",
+			"600ms",
+			"ms",
+			"mediator",
+			"Backbone",
+			"helpMeDoIt",
+			"800ms",
+			"200ms",
+			"width 2s",
+			"-webkit-transition:width 2s;\n                        transition:width 2s;",
+			" -webkit-transition:width 2s;\n                        transition:width 2s;",
+			"2s",
+			"@expanded_menu_width",
+			"less"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/action_center/idea.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Six - Future JavaScript Syntax/Six.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/models/campaign.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/lib/string_util.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/graph/pie.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1436,
+								1436
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/layout.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/ben/Code/Windsor/ascmockup/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9069,
+								9069
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2856.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/action_center.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Six - Future JavaScript Syntax/Six.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "wcui.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"layout.less",
+				"wcui/static/css/layout.less"
+			],
+			[
+				"pie",
+				"wcui/static/js/views/graph/pie.js"
+			],
+			[
+				"base.js",
+				"wcui/static/js/views/base.js"
+			],
+			[
+				"layout",
+				"wcui/views/layout.py"
+			],
+			[
+				"analytics.js",
+				"wcui/static/js/analytics.js"
+			],
+			[
+				"action_center.js",
+				"wcui/static/js/action_center.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

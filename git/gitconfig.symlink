@@ -1,11 +1,10 @@
 [user]
 	name = Ben McCormick
-	email = ben.mccormick@alumni.duke.edu
+	email = ben.mccormick@windsorcircle.com
 [hub]
 	protocol = https
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+[diff]
+	tool = opendiff
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -13,3 +12,9 @@
 	default = simple
 [core]
 	excludesfile = /Users/ben/.gitignore_global
+[color]
+	ui = true
+[difftool]
+	prompt = false
+[merge]
+	tool = opendiff

@@ -1,14 +1,17 @@
-#setup VI mode
-set-window-option -g mode-keys vi
 #Make ctrl+a the main tmux command
 unbind C-b
 unbind C-a
 set -g prefix C-a
 bind C-a send-prefix 
-
+setw -g mode-keys vi
 # We want to go fish
 set-option -g default-shell /usr/local/bin/fish
-
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind -t vi-copy 'v' begin-selection
+bind -t vi-copy 'y' copy-selection
 # change the default delay before passing on keystrokes
 set -s escape-time 1
 # start panes and windows at 1
@@ -42,11 +45,24 @@ bind-key -r * resize-pane -R 3
 set -g default-terminal "screen-256color"
 
 # Mouse mode (mostly disabled for now, but allow scrolling a pane)
-set -g mode-mouse on
+set -g mode-mouse off
 # set -g mouse-select-pane on
 # set -g mouse-resize-pane on
 # set -g mouse select-window on
-
+# set mouse on with prefix m
+ bind m \
+    set -g mode-mouse on \;\
+    set -g mouse-resize-pane on \;\
+    set -g mouse-select-pane on \;\
+    set -g mouse-select-window on \;\
+    display 'Mouse: ON'
+# set mouse off with prefix M
+bind M \
+    set -g mode-mouse off \;\
+    set -g mouse-resize-pane off \;\
+    set -g mouse-select-pane off \;\
+    set -g mouse-select-window off \;\
+    display 'Mouse: OFF'
 # Colors
 
 setw -g status-fg colour240

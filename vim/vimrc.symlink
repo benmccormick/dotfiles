@@ -8,65 +8,65 @@ set shell=zsh
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 "My bundles
 
 " Themes
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 
 " Syntax
-Bundle 'groenewege/vim-less'
-Bundle 'skammer/vim-css-color'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'dag/vim-fish'
-Bundle 'elzr/vim-json'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle "lepture/vim-jinja"
+Plugin 'groenewege/vim-less'
+Plugin 'skammer/vim-css-color'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'dag/vim-fish'
+Plugin 'elzr/vim-json'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin "lepture/vim-jinja"
 
 " Functionality
 
 " ### Indispensable
 
 " ctrlp is file fuzzy search
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Ack.vim uses ack to search within files
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 "Airline provides a stylish appearance for the styleline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 " Syntastic provides syntax info
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 "Show git info in the gutter, sad that it and syntastic fight for space though
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 "Integrate with tmux
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " ### Use sometime
 
 " Nerdtree provides a file explorer, which is sometimes useful.
 " Mostly ctrlp handles file finding though
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " fugitive provides git bindings in Vim.  Don't use too much, but useful for
 " blame
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " Surround is useful for adding surrounding tags to elements (especially html)
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 " Allows vim-surround to be used with . command
-Bundle 'tpope/vim-repeat'
+Plugin 'tpope/vim-repeat'
 " Moves all autocompletion into one tab format
-"Bundle 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 
 " Experimenting with 
 
-Bundle 'marijnh/tern_for_vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'SirVer/ultisnips'
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'SirVer/ultisnips'
+Plugin 'Valloric/YouCompleteMe'
 
 "End Vundle
 call vundle#end()

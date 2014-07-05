@@ -1,13 +1,16 @@
 "Ben McCormick's vimrc
 
-
+" Use vim rather than vi settings
+set nocompatible
 " Set shell to zsh (fish and VIM don't play well together)
 set shell=zsh
 
 "Setup Vundle For Package Management
+
+"Vundle begins here, turn off filetype temporarily
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 Plugin 'gmarik/vundle'
 
 "My bundles
@@ -25,7 +28,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'dag/vim-fish'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin "lepture/vim-jinja"
+Plugin 'lepture/vim-jinja'
 
 " Functionality
 
@@ -44,7 +47,7 @@ Plugin 'airblade/vim-gitgutter'
 "Integrate with tmux
 Plugin 'christoomey/vim-tmux-navigator'
 
-" ### Use sometime
+" ### Use sometimes
 
 " Nerdtree provides a file explorer, which is sometimes useful.
 " Mostly ctrlp handles file finding though
@@ -56,21 +59,29 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 " Allows vim-surround to be used with . command
 Plugin 'tpope/vim-repeat'
-" Moves all autocompletion into one tab format
-"Plugin 'ervandew/supertab'
-
-" Experimenting with 
-
+"Gives smart completions for Javascript
 Plugin 'marijnh/tern_for_vim'
+" Provides easy shortcuts for commenting out lines
+Plugin 'scrooloose/nerdcommenter'
+" Great helpful autocompletion
+Plugin 'Valloric/YouCompleteMe'
+
+" Experimenting withthese
+
+Plugin 'rizzatti/dash.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'terryma/vim-smooth-scroll'
 
 "End Vundle
 call vundle#end()
+"Vundle ended so reenable filetypes
 filetype plugin indent on
+
+"Pull in matchit.vim, which is already bundled with Vim
+runtime! macros/matchit.vim
 
 
 " Appearance
@@ -80,27 +91,28 @@ filetype plugin indent on
 syntax on
 syntax enable
 set t_Co=256
-" Use solarized for the color scheme
-colorscheme solarized
+" Use base-16 for the color scheme, different themes in GUI and terminal
 if has('gui_running')
+colorscheme base16-flat
 set background=dark
 else
-set background=light
+let base16colorspace=256  " Access colors present in 256 colorspace
+colorscheme base16-eighties
+set background=dark
 endif
 "Use Source Code Pro for the font
 set guifont=Source\ Code\ Pro\ For\ Powerline:h12
-let g:airline_powerline_fonts = 1
 
 " General Config
 " ==============
 
-let mapleader='\'
+
+let mapleader='\'               " I just use the default Leader
 set encoding=utf-8
-set number                      " Line numbers are good
+set number
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
 set showcmd                     " Show incomplete cmds down the bottom
-set showmode                    " Show current mode down the bottom
 set gcr=a:blinkon0              " Disable cursor blink
 set autoread                    " Reload files changed outside vim
 set laststatus=2                " Always show status line
@@ -145,13 +157,12 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 if has('gui_running')
   set undodir=~/.vim/backups
   set undofile
-  " Hide the toolbar
-  set guioptions-=T
 endif
 
 " Indentation and Display
 " =======================
 
+" We want to replace tabs with spaces and have 4 space width indentation
 set autoindent
 set smartindent
 set smarttab
@@ -162,8 +173,6 @@ set expandtab
 
 set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visually
 set nowrap                            " Don't wrap lines
-autocmd Filetype mkd setlocal wrap
-set linebreak                         " Wrap lines at convenient points for markdown only
 
 " Folds
 " =====
@@ -200,6 +209,11 @@ set statusline+=%l/%L:%v                        " Set <line number>/<total lines
 set statusline+=\                               " Set ending space
 set noshowmode                                  " Let powerline handle the mode display
 
+"Custom commands
+
+"Let K be the opposite of J
+map K i<Enter><Esc>
+
 "Plugin Options
 
 
@@ -211,6 +225,7 @@ let g:ctrlp_custom_ignore = {
     \ }
 " Airline options
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 "Markdown options
 let g:vim_markdown_folding_disabled=1
@@ -220,7 +235,7 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
 
 "YouCompleteMe options
-"let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_min_num_of_chars_for_completion=3
 
 "jinja config
 au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
@@ -228,8 +243,38 @@ au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 "Utisnips config
 
 "" Trigger configuration. Can't use tab with YouCompleteMe
-let g:UltiSnipsExpandTrigger=">"
+function! g:UltiSnips_Complete()
+    call UltiSnips#ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips_JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-e>"
 
 " Edit snippets in a split
-let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsEditSplit='vertical'
+"Neocomplete
+let g:neocomplete#enable_at_startup = 1
 
+"Smooth Scroll
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 10, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll,10, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 10, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 4)<CR>
+
+"Syntax Specific
+
+
+"Markdown options
+let g:vim_markdown_folding_disabled=1

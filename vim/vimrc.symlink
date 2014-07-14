@@ -1,9 +1,20 @@
 "Ben McCormick's vimrc
 
+" Setup stuff
+" ===========
+
 " Use vim rather than vi settings
 set nocompatible
+
+" Shell stuff here
+
 " Set shell to zsh (fish and VIM don't play well together)
 set shell=zsh
+"Don't dump distracting text to terminal during searches!
+set shellpipe=2>/dev/null>
+
+" Plugins here
+" =============
 
 "Setup Vundle For Package Management
 
@@ -13,11 +24,12 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
-"My bundles
+"My plugins
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
+Plugin 'reedes/vim-colors-pencil'
 
 " Syntax
 Plugin 'groenewege/vim-less'
@@ -46,14 +58,14 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 "Integrate with tmux
 Plugin 'christoomey/vim-tmux-navigator'
+"Provides Sublime-Text like smart completion of braces, parens and such
+Plugin 'Raimondi/delimitMate'
 
 " ### Use sometimes
 
-" Nerdtree provides a file explorer, which is sometimes useful.
-" Mostly ctrlp handles file finding though
+" Nerdtree provides a file explorer, which is sometimes useful. Mostly ctrlp handles file finding though
 Plugin 'scrooloose/nerdtree'
-" fugitive provides git bindings in Vim.  Don't use too much, but useful for
-" blame
+" fugitive provides git bindings in Vim.  Don't use too much, but useful for blame
 Plugin 'tpope/vim-fugitive'
 " Surround is useful for adding surrounding tags to elements (especially html)
 Plugin 'tpope/vim-surround'
@@ -65,27 +77,35 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'scrooloose/nerdcommenter'
 " Great helpful autocompletion
 Plugin 'Valloric/YouCompleteMe'
+"Adds convenience stuff for writers
+Plugin 'reedes/vim-pencil'
+" Allows for different situational Vim themes
+Plugin 'reedes/vim-thematic'
 
-" Experimenting withthese
+" Experimenting with these
 
-Plugin 'rizzatti/dash.vim'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'Raimondi/delimitMate'
 Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'terryma/vim-smooth-scroll'
+
+" Not Using anymore/right now
+" Provides an alternative way to move quickly through files
+"Plugin 'Lokaltog/vim-easymotion'
+" Provides integration with dash.app.  I mostly query dash directly
+"Plugin 'rizzatti/dash.vim'
+"Tries to handle ctrlp/ack.vim/buffer switching tasks, but lacks the attention
+"to detail and documentation of those plugins
+"Plugin 'Shougo/unite.vim'
+"Plugin 'Shougo/vimproc.vim' "Unite dependency
 
 "End Vundle
 call vundle#end()
 "Vundle ended so reenable filetypes
 filetype plugin indent on
-
 "Pull in matchit.vim, which is already bundled with Vim
 runtime! macros/matchit.vim
 
-
 " Appearance
-" ========
+" ==========
 
 "We want syntax highlighting in 256 colors
 syntax on
@@ -93,23 +113,23 @@ syntax enable
 set t_Co=256
 " Use base-16 for the color scheme, different themes in GUI and terminal
 if has('gui_running')
-colorscheme base16-flat
-set background=dark
+    colorscheme pencil
+    set background=light
 else
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-eighties
-set background=dark
+    let base16colorspace=256  " Access colors present in 256 colorspace
+    colorscheme base16-eighties
+    set background=dark
 endif
 "Use Source Code Pro for the font
-set guifont=Source\ Code\ Pro\ For\ Powerline:h12
+set guifont=Source\ Code\ Pro\ For\ Powerline:h16
+set noshowmode                                  " Let airline handle the mode display
 
 " General Config
 " ==============
 
-
 let mapleader='\'               " I just use the default Leader
 set encoding=utf-8
-set number
+set number                      " Line numbers are nice
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
 set showcmd                     " Show incomplete cmds down the bottom
@@ -119,7 +139,7 @@ set laststatus=2                " Always show status line
 set hidden                      " Buffers can exist in the background
 set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
-set shortmess=filnxtToOI       " see :help shortmess
+set shortmess=filnxtToOI        " see :help shortmess
 
 " Mouse
 " ======
@@ -198,23 +218,17 @@ set scrolloff=10
 set sidescrolloff=15
 set sidescroll=1
 
-" Status Line
-" ===========
 
-set statusline=                                 " Override default
-set statusline+=%{fugitive#statusline()[4:-2]}  " Show fugitive git info
-set statusline+=\ %f\ %m\ %r                    " Show filename/path
-set statusline+=%=                              " Set right-side status info after this line
-set statusline+=%l/%L:%v                        " Set <line number>/<total lines>:<column>
-set statusline+=\                               " Set ending space
-set noshowmode                                  " Let powerline handle the mode display
-
-"Custom commands
+" Custom commands
+" ===============
 
 "Let K be the opposite of J
 map K i<Enter><Esc>
+"\rr => refresh vimrc
+map <leader>rr :source ~/.vimrc<CR>
 
-"Plugin Options
+" Plugin Options
+" ==============
 
 
 " CTRL+P options
@@ -249,7 +263,7 @@ function! g:UltiSnips_Complete()
         if pumvisible()
             return "\<C-n>"
         else
-            call UltiSnips_JumpForwards()
+            call UltiSnips#JumpForwards()
             if g:ulti_jump_forwards_res == 0
                return "\<TAB>"
             endif
@@ -267,14 +281,56 @@ let g:UltiSnipsEditSplit='vertical'
 "Neocomplete
 let g:neocomplete#enable_at_startup = 1
 
-"Smooth Scroll
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 10, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll,10, 2)<CR>
-noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 10, 4)<CR>
-noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 4)<CR>
+
+"Thematic
+
+let g:thematic#themes = {
+\ 'solarized_light'  : { 
+\                  'colorscheme': 'solarized',
+\                  'background': 'light',
+\                  'font-size': 12,
+\                  'transparency': 0
+\                },
+\ 'solarized_dark'  : { 
+\                  'colorscheme': 'solarized',
+\                  'background': 'dark',
+\                  'font-size': 12,
+\                  'transparency': 0
+\                },
+\ 'pencil_lite' :{ 'colorscheme': 'pencil',
+\                  'background': 'light',
+\                  'ruler': 1,
+\                  'typeface': 'Source Code Pro Light',
+\                  'fullscreen': 0,
+\                  'transparency': 0,
+\                  'linespace': 6,
+\                },
+\ }
+
+"Unite
+"let g:unite_source_rec_async_command =
+                "\ 'ag --follow --nocolor --nogroup --hidden -g ""'
+"call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"nnoremap <C-p> :<C-u>Unite -start-insert file_rec/async:!<CR>
+"nnoremap <leader>a :Unite -start-insert -silent -buffer-name=ag grep:.<CR>
+
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
+  autocmd FileType text call pencil#init({'wrap': 'hard'})
+augroup END
+
+nnoremap <silent> <leader>ps :SoftPencil<cr>
+nnoremap <silent> <leader>ph :HardPencil<cr>
+nnoremap <silent> <leader>pn :NoPencil<cr>
+nnoremap <silent> <leader>pt :TogglePencil<cr>
+
 
 "Syntax Specific
 
 
 "Markdown options
 let g:vim_markdown_folding_disabled=1
+
+let g:pencil#wrapModeDefault = 'hard'   " or 'soft'

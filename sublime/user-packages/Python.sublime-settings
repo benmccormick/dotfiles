@@ -1,0 +1,7 @@
+{
+    "color_scheme": "Packages/User/Solarized (light) (SL).tmTheme",
+    //For JEDI Autocomplete
+    "auto_complete_triggers": [{
+        "selector": "source.python", "characters": "."
+    }],
+}

@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/ben/Code/projects/backbone.marionette",
+            "folder_exclude_patterns": ["node_modules"]
+		}
+	]
+}

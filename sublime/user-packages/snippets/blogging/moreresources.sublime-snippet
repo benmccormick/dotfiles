@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+### More Resources
+
+-
+-
+-
+
+]]></content>
+    <tabTrigger>moreres</tabTrigger>
+    <scope>text.html.markdown</scope>
+</snippet>

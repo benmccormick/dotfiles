@@ -1,3 +1,5 @@
 vim/vim.symlink/bundle
 terminal/fish/fish_history
+.DS_Store
+.pjconfig
 

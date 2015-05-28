@@ -1,0 +1,84 @@
+snippet testmodel
+define([$1],function($2) {
+    describe('$3', function() {
+		var model;
+			
+		/* Setup And Teardown */
+		beforeEach(function() {
+			model = new $2();
+		});
+
+		afterEach(function() {
+			model.destroy();
+		});
+
+		
+		/* Basic Existence tests*/
+		it('can be instantiated',function() {
+			expect(model).toBeDefined();
+			//is a model?
+			expect(model.attributes).toBeDefined();
+			expect(model.get).toBeDefined();
+			expect(model.set).toBeDefined();
+		});
+
+		/* Defaults and Methods */
+
+		/* Initialization Process */
+
+		/* Control Flow */
+
+		/* Events and Callbacks */
+	});
+});
+endsnippet
+
+
+snippet testview
+//Define View then Model
+define([$1,$2],function($3,$4) {
+
+    describe('$5', function() {
+		var model,view,region;
+			
+		/* Setup And Teardown */
+		beforeEach(function() {
+			$('body').append('<div class="view-test">');
+			region =  new Backbone.Marionette.Region({el:'.view-test'});
+			model = new $4({name:'Test'});
+			view = new $3({model:model});
+			region.show(view);
+		});
+
+		afterEach(function() {
+			model.destroy();
+			view.destroy();
+			$('.view-test').remove();
+		});
+
+		
+
+		/* Basic Existence tests*/
+		it('can be instantiated and added to the DOM',function() {
+			expect(view).toBeDefined();
+			//is a model?
+			expect(view.render).toBeDefined();
+			//did it end up in the DOM?
+			expect(view.$el).toBeDefined();
+		});
+
+		/* DOM Events and their callbacks */
+
+		/* Interaction with model/collection*/
+
+		/* Functional DOM Changes */
+
+	});
+});
+endsnippet
+
+snippet ittest
+it('$1',function() {
+	$0
+});
+endsnippet

@@ -11,7 +11,8 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/ben/.gitignore_global
+	excludesfile = /Users/ben/.gitignore
+	editor = mvim -v
 [color]
 	ui = true
 [difftool]
@@ -21,3 +22,11 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+
+[alias]
+    co = checkout
+    checkotu = checkout
+    chekcout = checkout
+    s = status
+    p = push
+    b = branch

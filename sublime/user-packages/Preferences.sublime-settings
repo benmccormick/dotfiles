@@ -1,0 +1,46 @@
+{
+	"added_words":
+	[
+		"destructuring"
+	],
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.js"
+		}
+	],
+	"caret_style": "solid",
+	"color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
+	"draw_white_space": "selection",
+	"font_face": "Source Code Pro Medium",
+	"font_size": 14,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Color Highlighter",
+		"Markdown",
+		"ASP",
+		"jQuery",
+		"Vintage",
+		"GitGutter",
+		"Bootstrap 3 Snippets"
+	],
+	"rulers":
+	[
+		100
+	],
+	"save_on_focus_lost": true,
+	"show_full_path": true,
+	"tab_size": 4,
+	"tabs_small": true,
+	"tern_command":
+	[
+		"node",
+		"/Users/ben/.vim/bundle/tern_for_vim/node_modules/tern/bin/tern"
+	],
+	"theme": "Afterglow-orange.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true
+}

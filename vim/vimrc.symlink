@@ -8,8 +8,8 @@ set nocompatible
 
 " Shell stuff here
 
-" Set shell to zsh (fish and VIM don't play well together)
-set shell=zsh
+" Set shell to bash (fish and VIM don't play well together)
+set shell=bash
 "Don't dump distracting text to terminal during searches!
 set shellpipe=2>/dev/null>
 
@@ -20,7 +20,7 @@ set shellpipe=2>/dev/null>
 
 "Vundle begins here, turn off filetype temporarily
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle/,/usr/local/lib/node_modules/typescript-tools
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
@@ -28,19 +28,18 @@ Plugin 'gmarik/vundle'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'chriskempson/base16-vim'
-Plugin 'reedes/vim-colors-pencil'
 
 " Syntax
-Plugin 'groenewege/vim-less'
-Plugin 'skammer/vim-css-color'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'groenewege/vim-less'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'dag/vim-fish'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'lepture/vim-jinja'
+Plugin 'digitaltoad/vim-jade'
 
 " Functionality
 
@@ -50,20 +49,23 @@ Plugin 'lepture/vim-jinja'
 Plugin 'kien/ctrlp.vim'
 " Ack.vim uses ack to search within files
 Plugin 'mileszs/ack.vim'
+"Plugin 'rking/ag.vim'
 "Airline provides a stylish appearance for the styleline
 Plugin 'bling/vim-airline'
 " Syntastic provides syntax info
 Plugin 'scrooloose/syntastic'
 "Show git info in the gutter, sad that it and syntastic fight for space though
-Plugin 'airblade/vim-gitgutter'
+"Plugin 'airblade/vim-gitgutter'
 "Integrate with tmux
 Plugin 'christoomey/vim-tmux-navigator'
 "Provides Sublime-Text like smart completion of braces, parens and such
 Plugin 'Raimondi/delimitMate'
+"Gives smart completions for Javascript
+Plugin 'marijnh/tern_for_vim'
 
 " ### Use sometimes
 
-" Nerdtree provides a file explorer, which is sometimes useful. Mostly ctrlp handles file finding though
+"Nerdtree provides a file explorer, which is sometimes useful. Mostly ctrlp handles file finding though
 Plugin 'scrooloose/nerdtree'
 " fugitive provides git bindings in Vim.  Don't use too much, but useful for blame
 Plugin 'tpope/vim-fugitive'
@@ -71,21 +73,24 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 " Allows vim-surround to be used with . command
 Plugin 'tpope/vim-repeat'
-"Gives smart completions for Javascript
-Plugin 'marijnh/tern_for_vim'
-" Provides easy shortcuts for commenting out lines
-Plugin 'scrooloose/nerdcommenter'
 " Great helpful autocompletion
 Plugin 'Valloric/YouCompleteMe'
 "Adds convenience stuff for writers
 Plugin 'reedes/vim-pencil'
-" Allows for different situational Vim themes
-Plugin 'reedes/vim-thematic'
+"Provide snippets functionality in Vim
+Plugin 'SirVer/ultisnips'
+"Easy commenting in Vim
+Plugin 'tpope/vim-commentary'
+"Standardize whitespace
+Plugin 'editorconfig/editorconfig-vim'
+
 
 " Experimenting with these
 
-Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-eunuch'
+Plugin 'itspriddle/vim-marked'
 
 " Not Using anymore/right now
 " Provides an alternative way to move quickly through files
@@ -94,34 +99,38 @@ Plugin 'tpope/vim-unimpaired'
 "Plugin 'rizzatti/dash.vim'
 "Tries to handle ctrlp/ack.vim/buffer switching tasks, but lacks the attention
 "to detail and documentation of those plugins
-"Plugin 'Shougo/unite.vim'
-"Plugin 'Shougo/vimproc.vim' "Unite dependency
+" Plugin 'Shougo/unite.vim'
+" Plugin 'Shougo/vimproc.vim' "Unite dependency
+" Cool way of setting up projects
+"Plugin 'tpope/vim-projectionist'
+"Plugin 'merlinrebrovic/focus.vim'
 
 "End Vundle
 call vundle#end()
-"Vundle ended so reenable filetypes
+" "Vundle ended so reenable filetypes
 filetype plugin indent on
-"Pull in matchit.vim, which is already bundled with Vim
+" "Pull in matchit.vim, which is already bundled with Vim
 runtime! macros/matchit.vim
 
-" Appearance
-" ==========
+" " Appearance
+" " ==========
 
-"We want syntax highlighting in 256 colors
+" "We want syntax highlighting in 256 colors
 syntax on
 syntax enable
 set t_Co=256
+
 " Use base-16 for the color scheme, different themes in GUI and terminal
 if has('gui_running')
-    colorscheme pencil
-    set background=light
-else
-    let base16colorspace=256  " Access colors present in 256 colorspace
-    colorscheme base16-eighties
+    colorscheme solarized
     set background=dark
+    set guifont=Source\ Code\ Pro\ For\ Powerline
+else
+    "let base16colorspace=256  " Access colors present in 256 colorspace
+    colorscheme solarized
+    set background=light
 endif
-"Use Source Code Pro for the font
-set guifont=Source\ Code\ Pro\ For\ Powerline:h16
+
 set noshowmode                                  " Let airline handle the mode display
 
 " General Config
@@ -140,6 +149,7 @@ set hidden                      " Buffers can exist in the background
 set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
 set shortmess=filnxtToOI        " see :help shortmess
+"set t_ti= t_te=                 "Use a different terminal to run external commands
 
 " Mouse
 " ======
@@ -200,6 +210,8 @@ set nowrap                            " Don't wrap lines
 set foldmethod=indent   " Fold based on indent
 set foldnestmax=3       " Deepest fold is 3 levels
 set nofoldenable        " Don't fold by default
+nnoremap <space> za
+vnoremap <space> zf
 
 " Completion
 " ==========
@@ -219,6 +231,15 @@ set sidescrolloff=15
 set sidescroll=1
 
 
+" Grep
+" =====
+if executable('ag')
+    " Note we extract the column as well as the file and line number
+    set grepprg=ag\ --nogroup\ --nocolor
+    set grepformat=%f:%l:%c%m
+endif
+
+
 " Custom commands
 " ===============
 
@@ -227,25 +248,30 @@ map K i<Enter><Esc>
 "\rr => refresh vimrc
 map <leader>rr :source ~/.vimrc<CR>
 
+
 " Plugin Options
 " ==============
 
 
 " CTRL+P options
 
-let g:ctrlp_custom_ignore = {
-    \ 'file': '\.pyc$',
-    \ 'dir': 'node_modules\|\.DS_Store$\|\.git$'
-    \ }
+set wildignore+=*/wcui/dist/*
+let g:ctrlp_user_command = 'ag %s -i --nocolor --ignore .git  --ignore .svn  --ignore .hg  --ignore .DS_Store  --ignore "static"  --ignore "**/*.pyc"  -g ""'
+
 " Airline options
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
-"Markdown options
-let g:vim_markdown_folding_disabled=1
+"Syntastic Options
+let g:syntastic_check_on_open = 1
+map <Leader>e :Errors<cr>
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_javascript_checkers = ["eslint"]
+
 
 "NerdTree Options
-map <C-n> :NERDTreeToggle<CR>
+map <c-t> :NERDTreeToggle<CR>
 let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
 
 "YouCompleteMe options
@@ -282,38 +308,24 @@ let g:UltiSnipsEditSplit='vertical'
 let g:neocomplete#enable_at_startup = 1
 
 
-"Thematic
 
-let g:thematic#themes = {
-\ 'solarized_light'  : { 
-\                  'colorscheme': 'solarized',
-\                  'background': 'light',
-\                  'font-size': 12,
-\                  'transparency': 0
-\                },
-\ 'solarized_dark'  : { 
-\                  'colorscheme': 'solarized',
-\                  'background': 'dark',
-\                  'font-size': 12,
-\                  'transparency': 0
-\                },
-\ 'pencil_lite' :{ 'colorscheme': 'pencil',
-\                  'background': 'light',
-\                  'ruler': 1,
-\                  'typeface': 'Source Code Pro Light',
-\                  'fullscreen': 0,
-\                  'transparency': 0,
-\                  'linespace': 6,
-\                },
-\ }
+"Unite.vim
 
-"Unite
-"let g:unite_source_rec_async_command =
-                "\ 'ag --follow --nocolor --nogroup --hidden -g ""'
-"call unite#filters#matcher_default#use(['matcher_fuzzy'])
-"nnoremap <C-p> :<C-u>Unite -start-insert file_rec/async:!<CR>
-"nnoremap <leader>a :Unite -start-insert -silent -buffer-name=ag grep:.<CR>
+" let g:unite_split_rule = "botright"
+" let g:unite_force_overwrite_statusline = 0
+" let g:unite_winheight = 10
+" "let g:unite_source_rec_async_command= 'ag --nogroup --hidden -g ""'
+" " replace ctrl-p
+" "call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" nnoremap <C-p> :<C-u>Unite -start-insert file_rec/async<cr>
+" nnoremap <leader>a :Unite -start-insert -silent -buffer-name=ag grep:.<CR>
 
+"Markdown options
+let g:vim_markdown_folding_disabled=1
+let g:pencil#wrapModeDefault = 'hard'   " or 'soft'
+
+"Tagbar
+"
 
 augroup pencil
   autocmd!
@@ -327,10 +339,45 @@ nnoremap <silent> <leader>pn :NoPencil<cr>
 nnoremap <silent> <leader>pt :TogglePencil<cr>
 
 
+
 "Syntax Specific
 
+augroup js_stuff
+  autocmd!
+  "Remove trailing whitespace from JS files on save
+  autocmd BufWritePre *.js :%s/\s\+$//e
 
-"Markdown options
-let g:vim_markdown_folding_disabled=1
+  "Treat es6 as js
+  autocmd BufNewFile,BufRead *.es6   set filetype=javascript
+augroup END
 
-let g:pencil#wrapModeDefault = 'hard'   " or 'soft'
+set re=1
+
+
+" Functions
+
+" Thanks to Salman Halim: http://vim.wikia.com/wiki/Window_zooming_convenience
+"toggles whether or not the current window is automatically zoomed
+function! ToggleMaxWins()
+  if exists('g:windowMax')
+    au! maxCurrWin
+    wincmd =
+    unlet g:windowMax
+  else
+    augroup maxCurrWin
+      autocmd!
+        " au BufEnter * wincmd _ | wincmd |
+        "
+        " only max it vertically
+        au! WinEnter * wincmd _
+    augroup END
+    do maxCurrWin WinEnter
+    let g:windowMax=1
+  endif
+endfunction
+nnoremap <Leader>max :call ToggleMaxWins()<CR>
+
+nnoremap <silent> <ctrl-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <ctrl-l> :TmuxNavigateRight<cr>
+
+

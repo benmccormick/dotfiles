@@ -1,13 +1,10 @@
-
 # setup PATH
-export PATH=$PATH:/usr/cisco/bin/:/usr/atria/bin/:/usr/X11R6/bin:/opt/CSCOppm-gw/bin/:/usr/gnu/bin:/opt/nodejs/npm-packages/bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 # set terminal to 256 colors
 [ -z "$TMUX" ] && export TERM=xterm-256color
-
-
-
-#PPM Env variables
-DTI_ENCL_TITLE=filename;export DTI_ENCL_TITLE
-DEBUG=true;export DEBUG
-
-
+# Setup autojump
+[[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
+# Base16 Shell
+BASE16_SCHEME="eighties"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL

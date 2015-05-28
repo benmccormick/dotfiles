@@ -1,3 +1,9 @@
+# matches case insensitive for lowercase
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# pasting with tabs doesn't perform completion
+zstyle ':completion:*' insert-tab pending
+
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' autodescription 'specify: %d'
@@ -22,3 +28,15 @@ zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
 
+# Setup zsh-autosuggestions
+#source ~/.zsh/lib/autosuggestions/autosuggestions.zsh
+
+# Enable autosuggestions automatically
+# zle-line-init() {
+#     zle autosuggest-start
+# }
+# zle -N zle-line-init
+
+# # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
+# # zsh-autosuggestions is designed to be unobtrusive)
+bindkey '^T' autosuggest-toggle

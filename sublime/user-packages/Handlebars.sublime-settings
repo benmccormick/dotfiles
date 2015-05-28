@@ -1,0 +1,13 @@
+{
+    "color_scheme": "Packages/User/SublimeLinter/base16-atelierlakeside.light (SL).tmTheme",
+    "font_size":14,
+    "line_numbers": false,
+    "gutter": false,
+    "extensions":
+	[
+		"hbs"
+	],
+	"rulers":
+	[
+	]
+}

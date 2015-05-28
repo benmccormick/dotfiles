@@ -1,5 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/vob/sgm/src/install/sol'
-let g:netrw_dirhist_2='/Users/ben/Blog/blog/node_modules/wintersmith-showdown/node_modules/showdown'
-let g:netrw_dirhist_3='/Users/ben/Code/Windsor/wcui_dev/src/wcui'
+let g:netrw_dirhist_cnt =0

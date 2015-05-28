@@ -1,0 +1,15 @@
+{
+	"color_scheme": "Packages/User/Slush & Poppies (SL).tmTheme",
+	"extensions":
+	[
+		"html,jinja2",
+		"pt",
+		"html"
+	],
+	"font_size": 20,
+	"line_numbers": false,
+	"margin": false,
+	"rulers":
+	[
+	]
+}

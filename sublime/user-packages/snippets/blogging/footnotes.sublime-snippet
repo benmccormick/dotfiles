@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+<div class="footnotes">
+<ol>
+    <li class="footnote" id="fn:1">
+        <p>
+        $1
+        <a href="#fnref:1" title="return to article"> ↩</a></p>
+    </li>
+</ol>
+</div>$2
+]]></content>
+    <tabTrigger>fns</tabTrigger>
+    <scope>text.html.markdown</scope>
+</snippet>
+
+

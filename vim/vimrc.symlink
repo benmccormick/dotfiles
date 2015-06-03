@@ -1,47 +1,35 @@
 "Ben McCormick's vimrc
 
-" Setup stuff
-" ===========
-
-" Use vim rather than vi settings
-set nocompatible
-
-" Shell stuff here
-
-" Set shell to bash (fish and VIM don't play well together)
-set shell=zsh
-"Don't dump distracting text to terminal during searches!
-set shellpipe=2>/dev/null>
-
-" Plugins here
+" Plugins
 " =============
 
 "Setup Vundle For Package Management
 
 "Vundle begins here, turn off filetype temporarily
 filetype off
+"Add vundle and any other packages not installed through vundle to our lookup
+"path
 set rtp+=~/.vim/bundle/vundle/,/usr/local/lib/node_modules/typescript-tools
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
-"My plugins
-
-" Themes
+" # Themes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 
-" Syntax
+" # Enhanced Syntax
+Plugin 'othree/yajs.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'groenewege/vim-less'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'leafgarland/typescript-vim'
-"Plugin 'jelera/vim-javascript-syntax'
-Plugin 'othree/yajs.vim'
-Plugin 'dag/vim-fish'
 Plugin 'elzr/vim-json'
+
+" # Extra Syntax
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'lepture/vim-jinja'
+Plugin 'dag/vim-fish'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'leafgarland/typescript-vim'
 
 " Functionality
 
@@ -51,7 +39,6 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'kien/ctrlp.vim'
 " Ack.vim uses ack to search within files
 Plugin 'mileszs/ack.vim'
-"Plugin 'rking/ag.vim'
 "Airline provides a stylish appearance for the styleline
 Plugin 'bling/vim-airline'
 " Syntastic provides syntax info
@@ -62,8 +49,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'christoomey/vim-tmux-navigator'
 "Provides Sublime-Text like smart completion of braces, parens and such
 Plugin 'Raimondi/delimitMate'
-"Gives smart completions for Javascript
-Plugin 'marijnh/tern_for_vim'
+" Great helpful autocompletion (requires a separate compile step)
+Plugin 'Valloric/YouCompleteMe'
+"Easy commenting in Vim
+Plugin 'tpope/vim-commentary'
 
 " ### Use sometimes
 
@@ -71,27 +60,23 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'scrooloose/nerdtree'
 " fugitive provides git bindings in Vim.  Don't use too much, but useful for blame
 Plugin 'tpope/vim-fugitive'
-" Surround is useful for adding surrounding tags to elements (especially html)
+" Surround is useful for adding surrounding tags to elements (especially html and quotes)
 Plugin 'tpope/vim-surround'
 " Allows vim-surround to be used with . command
 Plugin 'tpope/vim-repeat'
-" Great helpful autocompletion
-Plugin 'Valloric/YouCompleteMe'
 "Adds convenience stuff for writers
 Plugin 'reedes/vim-pencil'
 "Provide snippets functionality in Vim
 Plugin 'SirVer/ultisnips'
-"Easy commenting in Vim
-Plugin 'tpope/vim-commentary'
 "Standardize whitespace
 Plugin 'editorconfig/editorconfig-vim'
+"Gives smart completions for Javascript
+Plugin 'marijnh/tern_for_vim'
 
 
 " Experimenting with these
 
 Plugin 'tpope/vim-unimpaired'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-eunuch'
 Plugin 'itspriddle/vim-marked'
 
 " Not Using anymore/right now
@@ -106,6 +91,8 @@ Plugin 'itspriddle/vim-marked'
 " Cool way of setting up projects
 "Plugin 'tpope/vim-projectionist'
 "Plugin 'merlinrebrovic/focus.vim'
+"Plugin 'tpope/vim-eunuch'
+"Plugin 'terryma/vim-multiple-cursors'
 
 "End Vundle
 call vundle#end()
@@ -114,10 +101,10 @@ filetype plugin indent on
 " "Pull in matchit.vim, which is already bundled with Vim
 runtime! macros/matchit.vim
 
-" " Appearance
-" " ==========
+" Appearance
+" ==========
 
-" "We want syntax highlighting in 256 colors
+" "Syntax highlighting should be in 256 colors
 syntax on
 syntax enable
 set t_Co=256
@@ -125,7 +112,7 @@ set t_Co=256
 " Use base-16 for the color scheme, different themes in GUI and terminal
 if has('gui_running')
     colorscheme solarized
-    set background=dark
+    set background=light
     set guifont=Source\ Code\ Pro\ For\ Powerline
 else
     let base16colorspace=256  " Access colors present in 256 colorspace
@@ -133,25 +120,34 @@ else
     set background=dark
 endif
 
-set noshowmode                                  " Let airline handle the mode display
+" Sanity Config (Don't edit text like an animal)
+" ==============================================
+
+set nocompatible                " Use vim rather than vi settings
+set encoding=utf-8              " standard encoding
+"set relativenumber             " prefer absolute #
+set number                      " Its nice to see line numbers
+set backspace=indent,eol,start  " Allow backspace in insert mode
+set autoread                    " Reload files changed outside vim
+set hidden                      " Buffers can exist in the background
+set history=1000                " Store lots of :cmdline history (its not 1990)
+"Don't dump distracting text to terminal during searches!
+set shellpipe=2>/dev/null>
+set re=1                        "Use a non-broken regex engine for syntax highlighting
 
 " General Config
 " ==============
 
 let mapleader='\'               " I just use the default Leader
-set encoding=utf-8
-set number                      " Line numbers are nice
-set backspace=indent,eol,start  " Allow backspace in insert mode
-set history=1000                " Store lots of :cmdline history
 set showcmd                     " Show incomplete cmds down the bottom
 set gcr=a:blinkon0              " Disable cursor blink
-set autoread                    " Reload files changed outside vim
 set laststatus=2                " Always show status line
-set hidden                      " Buffers can exist in the background
 set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
 set shortmess=filnxtToOI        " see :help shortmess
 "set t_ti= t_te=                 "Use a different terminal to run external commands
+" Set shell to bash (fish and VIM don't play well together)
+set shell=zsh
 
 " Mouse
 " ======
@@ -208,7 +204,6 @@ set nowrap                            " Don't wrap lines
 
 " Folds
 " =====
-
 set foldmethod=indent   " Fold based on indent
 set foldnestmax=3       " Deepest fold is 3 levels
 set nofoldenable        " Don't fold by default
@@ -233,15 +228,6 @@ set sidescrolloff=15
 set sidescroll=1
 
 
-" Grep
-" =====
-if executable('ag')
-    " Note we extract the column as well as the file and line number
-    set grepprg=ag\ --nogroup\ --nocolor
-    set grepformat=%f:%l:%c%m
-endif
-
-
 " Custom commands
 " ===============
 
@@ -263,6 +249,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --ignore .git  --ignore .svn  --i
 " Airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 0
+set noshowmode " Let airline handle the mode display
 
 "Syntastic Options
 let g:syntastic_check_on_open = 1
@@ -306,12 +293,13 @@ let g:UltiSnipsListSnippets="<c-e>"
 
 " Edit snippets in a split
 let g:UltiSnipsEditSplit='vertical'
-"Neocomplete
-let g:neocomplete#enable_at_startup = 1
+
+"Tmux (Doing this again because Neovim thats why)
+nnoremap <silent> <ctrl-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <ctrl-l> :TmuxNavigateRight<cr>
 
 
-
-"Unite.vim
+"Unite.vim (not currently in use, but saving for future)
 
 " let g:unite_split_rule = "botright"
 " let g:unite_force_overwrite_statusline = 0
@@ -326,9 +314,7 @@ let g:neocomplete#enable_at_startup = 1
 let g:vim_markdown_folding_disabled=1
 let g:pencil#wrapModeDefault = 'hard'   " or 'soft'
 
-"Tagbar
-"
-
+" Pencil Options
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
@@ -340,46 +326,5 @@ nnoremap <silent> <leader>ph :HardPencil<cr>
 nnoremap <silent> <leader>pn :NoPencil<cr>
 nnoremap <silent> <leader>pt :TogglePencil<cr>
 
-
-
-"Syntax Specific
-
-augroup js_stuff
-  autocmd!
-  "Remove trailing whitespace from JS files on save
-  autocmd BufWritePre *.js :%s/\s\+$//e
-
-  "Treat es6 as js
-  autocmd BufNewFile,BufRead *.es6   set filetype=javascript
-augroup END
-
-set re=1
-
-
-" Functions
-
-" Thanks to Salman Halim: http://vim.wikia.com/wiki/Window_zooming_convenience
-"toggles whether or not the current window is automatically zoomed
-function! ToggleMaxWins()
-  if exists('g:windowMax')
-    au! maxCurrWin
-    wincmd =
-    unlet g:windowMax
-  else
-    augroup maxCurrWin
-      autocmd!
-        " au BufEnter * wincmd _ | wincmd |
-        "
-        " only max it vertically
-        au! WinEnter * wincmd _
-    augroup END
-    do maxCurrWin WinEnter
-    let g:windowMax=1
-  endif
-endfunction
-nnoremap <Leader>max :call ToggleMaxWins()<CR>
-
-nnoremap <silent> <ctrl-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <ctrl-l> :TmuxNavigateRight<cr>
 
 

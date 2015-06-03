@@ -9,7 +9,7 @@ set nocompatible
 " Shell stuff here
 
 " Set shell to bash (fish and VIM don't play well together)
-set shell=bash
+set shell=zsh
 "Don't dump distracting text to terminal during searches!
 set shellpipe=2>/dev/null>
 
@@ -28,13 +28,15 @@ Plugin 'gmarik/vundle'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 
 " Syntax
 Plugin 'plasticboy/vim-markdown'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/yajs.vim'
 Plugin 'dag/vim-fish'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
@@ -126,9 +128,9 @@ if has('gui_running')
     set background=dark
     set guifont=Source\ Code\ Pro\ For\ Powerline
 else
-    "let base16colorspace=256  " Access colors present in 256 colorspace
-    colorscheme solarized
-    set background=light
+    let base16colorspace=256  " Access colors present in 256 colorspace
+    colorscheme base16-flat
+    set background=dark
 endif
 
 set noshowmode                                  " Let airline handle the mode display

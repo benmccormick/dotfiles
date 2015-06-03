@@ -4,8 +4,6 @@ unbind C-a
 set -g prefix C-a
 bind C-a send-prefix 
 setw -g mode-keys vi
-# We want to go fish
-set-option -g default-shell /usr/local/bin/fish
 unbind [
 bind Escape copy-mode
 unbind p

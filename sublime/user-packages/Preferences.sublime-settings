@@ -18,13 +18,13 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Color Highlighter",
+		"Bootstrap 3 Snippets",
 		"Markdown",
-		"ASP",
 		"jQuery",
-		"Vintage",
 		"GitGutter",
-		"Bootstrap 3 Snippets"
+		"ASP",
+		"Color Highlighter",
+		"Vintage"
 	],
 	"rulers":
 	[
@@ -42,5 +42,6 @@
 	"theme": "Afterglow-orange.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true
+	"use_tab_stops": true,
+	"sidebar_size_14": true
 }

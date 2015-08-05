@@ -20,10 +20,10 @@ Plugin 'chriskempson/base16-vim'
 " # Enhanced Syntax
 Plugin 'othree/yajs.vim'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 
 " # Extra Syntax
+Plugin 'groenewege/vim-less'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'lepture/vim-jinja'
 Plugin 'dag/vim-fish'
@@ -116,7 +116,7 @@ if has('gui_running')
     set guifont=Source\ Code\ Pro\ For\ Powerline
 else
     let base16colorspace=256  " Access colors present in 256 colorspace
-    colorscheme base16-flat
+    colorscheme base16-mocha
     set background=dark
 endif
 
@@ -138,7 +138,7 @@ set re=1                        "Use a non-broken regex engine for syntax highli
 " General Config
 " ==============
 
-let mapleader='\'               " I just use the default Leader
+let mapleader = "\<Space>"               " I just use the default Leader
 set showcmd                     " Show incomplete cmds down the bottom
 set gcr=a:blinkon0              " Disable cursor blink
 set laststatus=2                " Always show status line
@@ -207,8 +207,8 @@ set nowrap                            " Don't wrap lines
 set foldmethod=indent   " Fold based on indent
 set foldnestmax=3       " Deepest fold is 3 levels
 set nofoldenable        " Don't fold by default
-nnoremap <space> za
-vnoremap <space> zf
+" nnoremap <space> za
+" vnoremap <space> zf
 
 " Completion
 " ==========
@@ -227,6 +227,15 @@ set scrolloff=10
 set sidescrolloff=15
 set sidescroll=1
 
+" Copy Paste improvements
+"
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 
 " Custom commands
 " ===============
@@ -236,6 +245,23 @@ map K i<Enter><Esc>
 "\rr => refresh vimrc
 map <leader>rr :source ~/.vimrc<CR>
 
+
+"PJ
+"
+function! PJOpen()
+   enew 
+   read ! pj
+endfunction
+
+function! OpenFile()
+    let bufferno = bufnr('%')
+    exe 'edit' . getline('.')
+    exe 'bw!' . bufferno
+endfunction
+
+command! PJOpen call PJOpen()
+
+command! OpenFile call OpenFile()
 
 " Plugin Options
 " ==============
@@ -302,12 +328,12 @@ nnoremap <silent> <ctrl-l> :TmuxNavigateRight<cr>
 "Unite.vim (not currently in use, but saving for future)
 
 " let g:unite_split_rule = "botright"
-" let g:unite_force_overwrite_statusline = 0
+" " let g:unite_force_overwrite_statusline = 0
 " let g:unite_winheight = 10
-" "let g:unite_source_rec_async_command= 'ag --nogroup --hidden -g ""'
-" " replace ctrl-p
-" "call unite#filters#matcher_default#use(['matcher_fuzzy'])
-" nnoremap <C-p> :<C-u>Unite -start-insert file_rec/async<cr>
+" let g:unite_source_rec_async_command= 'ack --nogroup --hidden -g ""'
+" " " replace ctrl-p
+" " "call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" " nnoremap <C-p> :<C-u>Unite -start-insert file_rec/async<cr>
 " nnoremap <leader>a :Unite -start-insert -silent -buffer-name=ag grep:.<CR>
 
 "Markdown options
@@ -326,5 +352,8 @@ nnoremap <silent> <leader>ph :HardPencil<cr>
 nnoremap <silent> <leader>pn :NoPencil<cr>
 nnoremap <silent> <leader>pt :TogglePencil<cr>
 
+"Treat es6 as js
+autocmd BufNewFile,BufRead *.es6   set filetype=javascript
 
-
+"Typescript
+let g:syntastic_typescript_tsc_args ='-t ES5 --module commonjs'

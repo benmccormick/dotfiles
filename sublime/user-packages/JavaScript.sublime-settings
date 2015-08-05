@@ -1,5 +1,7 @@
 {
-    "color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
+    // "color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
+    "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night-Eighties (SL).tmTheme",
+    // "color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
 	"extensions":
 	[
 		"js",

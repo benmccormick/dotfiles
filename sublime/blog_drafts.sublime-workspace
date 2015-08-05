@@ -24,11 +24,20 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/ben/Dropbox/blog_drafts/marionetteservices.md",
+			"file": "blog_drafts.sublime-project",
 			"settings":
 			{
-				"buffer_size": 3169,
+				"buffer_size": 74,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Dropbox/blog_drafts/namedfuncs.md",
+			"settings":
+			{
+				"buffer_size": 344,
+				"line_ending": "Unix",
+				"name": "# Writing Better Code: The power of well named fun"
 			}
 		}
 	],
@@ -39,16 +48,16 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 247.0,
-		"last_filter": "",
+		"height": 400.0,
+		"last_filter": "marke",
 		"selected_items":
 		[
 			[
-				"marked",
+				"marke",
 				"Marked"
 			],
 			[
-				"marke",
+				"marked",
 				"Marked"
 			],
 			[
@@ -348,7 +357,7 @@
 				"Package Control: Enable Package"
 			]
 		],
-		"width": 575.0
+		"width": 583.0
 	},
 	"console":
 	{
@@ -373,6 +382,15 @@
 	],
 	"file_history":
 	[
+		"/Users/ben/Dropbox/blog_drafts/bbfollowup.md",
+		"/Users/ben/Code/experiments/backbone_es6/js/views/todos.es6",
+		"/Users/ben/Dropbox/blog_drafts/backbonetips.md",
+		"/Users/ben/Code/projects/dbclient/client.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/tests/nightwatch/segment_builder.js",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ben/Code/experiments/backbone_es6/js/views/todos.es",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/untitled",
+		"/Users/ben/Dropbox/blog_drafts/marionetteservices.md",
 		"/Users/ben/dotfiles/sublime/blog_drafts.sublime-project",
 		"/Users/ben/Dropbox/blog_drafts/jsallonge.md",
 		"/Users/ben/Dropbox/blog_drafts/marionette_dry.md",
@@ -386,7 +404,6 @@
 		"/Users/ben/Dropbox/blog_drafts/vim_and_sublime.md",
 		"/Users/ben/Dropbox/blog_drafts/marionette_lifecycle.md",
 		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/blogging.sublime-snippet",
-		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/ben/Dropbox/blog_drafts/marionette_layouts.md",
 		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
@@ -492,19 +509,11 @@
 		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/node_modules/gulp/node_modules/vinyl-fs/node_modules/mkdirp/test/umask_sync.js",
 		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/utils.py",
 		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/templates/admin/adminpage.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/admin/models.pt",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/admin.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/exceptions.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/admin.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/store_layout.pt",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/views/dashboard/welcome_modal.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/error.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/dashboard.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css/analytics.less"
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/admin/models.pt"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -519,6 +528,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			",",
+			"':,",
+			"data",
+			"var",
+			"getters",
+			"font_options",
+			"	events: {\n		'click .toggle':	'toggleCompleted',\n		'dblclick label':	'edit',\n		'click .destroy':	'clear',\n		'keypress .edit':	'updateOnEnter',\n		'keydown .edit':	'revertOnEscape',\n		'blur .edit':		'close'\n	},",
+			"var",
 			"  ",
 			"event",
 			"wrap_width",
@@ -638,15 +655,7 @@
 			"ms",
 			"mediator",
 			"Backbone",
-			"helpMeDoIt",
-			"800ms",
-			"200ms",
-			"width 2s",
-			"-webkit-transition:width 2s;\n                        transition:width 2s;",
-			" -webkit-transition:width 2s;\n                        transition:width 2s;",
-			"2s",
-			"@expanded_menu_width",
-			"less"
+			"helpMeDoIt"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -668,31 +677,31 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/ben/Dropbox/blog_drafts/marionetteservices.md",
+					"file": "blog_drafts.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3169,
+						"buffer_size": 74,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2034,
-								2034
+								72,
+								72
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "markdown",
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "json",
 							"bh_regions":
 							[
 								"bh_c_define",
@@ -700,65 +709,61 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"vintage":
 							{
 								"_vintageous_glue_until_normal_mode": false,
-								"_vintageous_non_interactive": false,
-								"_vintageous_processing_notation": false,
 								"action": null,
 								"action_count": "",
 								"mode": "mode_normal",
@@ -769,11 +774,116 @@
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 95
+								"xpos": 0
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 1655.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/ben/Dropbox/blog_drafts/namedfuncs.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"auto_name": "# Writing Better Code: The power of well named fun",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": true,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_insert",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 16
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1348,28 +1458,30 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 400.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 808.0
 	},
 	"selected_group": 0,
 	"settings":
 	{
+		"_vintageous_last_buffer_search": "`Backbone.extend`",
+		"_vintageous_last_buffer_search_command": "vi_slash",
 		"_vintageous_last_char_search_command": "vi_big_f",
-		"_vintageous_last_character_search": "c",
+		"_vintageous_last_character_search": "1",
 		"_vintageous_reset_during_init": true,
 		"vintage":
 		{
-			"_cmdline_cd": "/Users/ben/Dropbox/blog_drafts"
+			"_cmdline_cd": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/tests/nightwatch"
 		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 190.0,
 	"status_bar_visible": true,
 	"template_settings":

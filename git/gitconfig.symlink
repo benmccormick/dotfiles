@@ -1,6 +1,6 @@
 [user]
 	name = Ben McCormick
-	email = ben.mccormick@windsorcircle.com
+	email = 
 [hub]
 	protocol = https
 [diff]
@@ -30,3 +30,9 @@
     s = status
     p = push
     b = branch
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[credential]
+	helper = cache

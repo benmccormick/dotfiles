@@ -10,28 +10,33 @@
 			"selector": "source.js"
 		}
 	],
+	"bold_folder_labels": true,
 	"caret_style": "solid",
 	"color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
 	"draw_white_space": "selection",
+	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro Medium",
-	"font_size": 14,
+	"font_size": 13,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Vintage",
 		"Bootstrap 3 Snippets",
-		"Markdown",
+		"ASP",
 		"jQuery",
 		"GitGutter",
-		"ASP",
-		"Color Highlighter",
-		"Vintage"
+		"Markdown",
+		"Color Highlighter"
 	],
+	"line_padding_bottom": 1,
 	"rulers":
 	[
 		100
 	],
 	"save_on_focus_lost": true,
 	"show_full_path": true,
+	"sidebar_size_14": true,
 	"tab_size": 4,
 	"tabs_small": true,
 	"tern_command":
@@ -42,6 +47,5 @@
 	"theme": "Afterglow-orange.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true,
-	"sidebar_size_14": true
+	"use_tab_stops": true
 }

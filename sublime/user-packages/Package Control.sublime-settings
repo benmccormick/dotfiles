@@ -7,6 +7,7 @@
 		"Babel",
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
+		"Block Cursor Everywhere",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
 		"Color Highlighter",
@@ -44,7 +45,6 @@
 		"Theme - Spacegray",
 		"Tomorrow Color Schemes",
 		"Vintageous",
-		"WordCount",
-		"Zen Tabs"
+		"WordCount"
 	]
 }

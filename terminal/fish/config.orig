@@ -1,3 +1,0 @@
-eval sh $HOME/.config/base16-shell/base16-eighties.dark.sh
-
-alias vim="mvim -v"

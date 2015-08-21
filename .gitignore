@@ -2,4 +2,6 @@ vim/vim.symlink/bundle
 terminal/fish/fish_history
 .DS_Store
 .pjconfig
-
+.sublime-workspace
+.sublime-project
+Package Control.cache

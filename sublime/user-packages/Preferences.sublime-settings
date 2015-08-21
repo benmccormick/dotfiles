@@ -16,18 +16,18 @@
 	"draw_white_space": "selection",
 	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro Medium",
-	"font_size": 13,
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Markdown",
+		"jQuery",
+		"Color Highlighter",
+		"GitGutter",
 		"Vintage",
 		"Bootstrap 3 Snippets",
-		"ASP",
-		"jQuery",
-		"GitGutter",
-		"Markdown",
-		"Color Highlighter"
+		"ASP"
 	],
 	"line_padding_bottom": 1,
 	"rulers":

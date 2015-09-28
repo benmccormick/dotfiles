@@ -13,8 +13,14 @@
 [core]
 	excludesfile = /Users/ben/.gitignore
 	editor = mvim -v
+    pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
 [color]
 	ui = true
+[color "diff-highlight"]
+	oldNormal = "magenta bold 52"
+	oldHighlight = "red bold"
+	newNormal = "green bold"
+	newHighlight = "cyan bold 22"
 [difftool]
 	prompt = false
 [merge]

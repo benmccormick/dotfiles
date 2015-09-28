@@ -116,8 +116,8 @@ if has('gui_running')
     set guifont=Source\ Code\ Pro\ For\ Powerline
 else
     let base16colorspace=256  " Access colors present in 256 colorspace
-    colorscheme base16-mocha
-    set background=dark
+    colorscheme solarized
+    set background=light
 endif
 
 " Sanity Config (Don't edit text like an animal)
@@ -147,7 +147,7 @@ set splitbelow                  " Opens horizontal split below current window
 set shortmess=filnxtToOI        " see :help shortmess
 "set t_ti= t_te=                 "Use a different terminal to run external commands
 " Set shell to bash (fish and VIM don't play well together)
-set shell=zsh
+set shell=bash
 
 " Mouse
 " ======
@@ -357,3 +357,6 @@ autocmd BufNewFile,BufRead *.es6   set filetype=javascript
 
 "Typescript
 let g:syntastic_typescript_tsc_args ='-t ES5 --module commonjs'
+
+"Tern for es6
+"let g:tern#command=['/usr/local/bin/node', '/Users/ben/Code/projects/tern-es6/bin/tern']

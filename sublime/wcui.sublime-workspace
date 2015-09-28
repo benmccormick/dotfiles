@@ -16,43 +16,99 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/action_center/page.js",
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/automator_workflow.es6",
 			"settings":
 			{
-				"buffer_size": 721,
+				"buffer_size": 9727,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/action_center/action.js",
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/base.es6",
 			"settings":
 			{
-				"buffer_size": 6619,
+				"buffer_size": 16387,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/button.es6",
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/admin.js",
 			"settings":
 			{
-				"buffer_size": 1325,
+				"buffer_size": 1122,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/ben/Code/scratch/resume.md",
+			"contents": "Package Control Messages\n========================\n\nBracketHighlighter:\n------------------\n\n  # BracketHighlighter 2.9.0\n  \n  ## New\n  \n  - bh_plugins can now request a bracket refresh on completion.  This fixes issue #260.\n  - Allow matching with Better RSpec package\n  \n  ",
 			"settings":
 			{
-				"buffer_size": 8042,
+				"buffer_size": 273,
 				"line_ending": "Unix",
-				"name": "Sarah Miller"
+				"name": "Package Control Messages",
+				"scratch": true
 			}
 		},
 		{
-			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/action_center/action.hbs",
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/dashboard.js",
 			"settings":
 			{
-				"buffer_size": 841,
+				"buffer_size": 1821,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/store_automators.py",
+			"settings":
+			{
+				"buffer_size": 10053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/api/api_automator_emails.py",
+			"settings":
+			{
+				"buffer_size": 12372,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email.es6",
+			"settings":
+			{
+				"buffer_size": 3385,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/replenishment.es6",
+			"settings":
+			{
+				"buffer_size": 2086,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email_template.es6",
+			"settings":
+			{
+				"buffer_size": 2388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/properties/replenishment.js",
+			"settings":
+			{
+				"buffer_size": 17829,
 				"line_ending": "Unix"
 			}
 		}
@@ -64,10 +120,86 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "makr",
+		"height": 132.0,
+		"last_filter": "packagecontrol upd",
 		"selected_items":
 		[
+			[
+				"packagecontrol upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packagecinst",
+				"Package Control: Install Package"
+			],
+			[
+				"packarempac",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packadisa",
+				"Package Control: Disable Package"
+			],
+			[
+				"set syntaxjavascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntaxjav",
+				"Set Syntax: Java"
+			],
+			[
+				"packae",
+				"Package Control: Enable Package"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git b",
+				"Git: Blame"
+			],
+			[
+				"gitbla",
+				"Git: Blame"
+			],
+			[
+				"Gitb",
+				"Git: Blame"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"packcremo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
 			[
 				"makr",
 				"Marked"
@@ -79,10 +211,6 @@
 			[
 				"git status",
 				"Git: Status"
-			],
-			[
-				"git bla",
-				"Git: Blame"
 			],
 			[
 				"git log",
@@ -129,10 +257,6 @@
 				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -159,10 +283,6 @@
 			[
 				"json",
 				"JSON Reindent: reindent file or selection"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"babe",
@@ -241,24 +361,12 @@
 				"SublimeLinter: Enable Linting"
 			],
 			[
-				"disable",
-				"Package Control: Disable Package"
-			],
-			[
 				"linterrep",
 				"SublimeLinter: Report (Open Files)"
 			],
 			[
 				"errors",
 				"SublimeLinter: Report (Open Files)"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"gitbla",
-				"Git: Blame"
 			],
 			[
 				"lint this",
@@ -461,7 +569,7 @@
 				"Set Syntax: JavaScript (Rails)"
 			]
 		],
-		"width": 583.0
+		"width": 547.0
 	},
 	"console":
 	{
@@ -484,139 +592,139 @@
 	"expanded_folders":
 	[
 		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components"
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/helpers"
 	],
 	"file_history":
 	[
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/action.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/action_center/edit_action.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/action.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/action_center.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/segmentsmanagement.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/validation.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/summary.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/store/AppSegment.py",
-		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/summary.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/segment.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/url_builder.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/toaster.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/store_segments.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/segments.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/segment_summary.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/gulpfile.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/routers/segments_router.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/navigate_alert.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/list.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/list_area.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/checkbox.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/components/checkbox.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/checkbox.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/download_modal.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/list_header.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/list_header.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/tooltip_setup.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/setup.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/store.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/login.pt",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wclib/wclib/initdb/json/segment_builder_selectors/segment_builder_selectors.json",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/dashboard/overview/customer_segments_table.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/dashboard/page_content.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/sortable_table.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/admin/SegmentBuilderOperator.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/admin/SegmentBuilderSelector.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/preview_modal.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wclib/wclib/initdb/json/segment_builder_operators/segment_builder_operators.json",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/components/button.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/input.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/download_modal.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/download_modal.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/summary.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/button.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/wcui/Chart.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/wcui/AnalyticsPanel.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/file.json",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wclib/wclib/security.py",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/crypto.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/input.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/layout.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/buttons.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/vendor/base_libs.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/rule_input.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/checkbox.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/rule.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/login_et.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/.bowerrc",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/login.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/graphs.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/action_center.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/admin.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/segmentbuilder.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/segmentpreview.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/segmenttemplates.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/select.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/wizard.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/tables.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/products.less",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/store/customFieldsTable.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/campaign_summary.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/builder_controls.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/download_modal_form.hbs",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/draggable.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/tracking_center/tracking_header.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/nightwatch.json",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/builder/preview_modal.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/package.json",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/index.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/page.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/templates/page.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/tracking_center/page.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/memento.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/filter_area.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/controls.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/common/multi_input_extension.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/common/multi_input.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/page.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/list.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/builder/rule.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/builder/filter_area.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/mock_services/segment_metadata.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/segment_metadata.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/components/select.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/components/input.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/collections/segment_template.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/toasters.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/segment_summary.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/segment_data.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/segment.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/droppable.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/rule.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/condition_group.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/select.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/rule.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/.eslintrc",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/list_header.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/page.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/segments/list_area.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/models/segment_summary.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/collections/segment_summary.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/models/segment_data.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/models/rule.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/segment_management_state.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/permissions.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/products/page_header.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/products/products_table.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/builder/preview_modal.hbs",
-		"/Users/ben/Code/Windsor/scratch/test.json",
+		"/Users/ben/Downloads/RRS_01_PredictiveOrderEmail_20150911_e_classic.html",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/documentation/track/magento.pt",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/documentation/track/shopify.pt",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/store/page.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/store/fieldsSummary.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/store/detailsSummary.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/store/customFieldsPage.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/permissions.js",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/behaviors/validation.spec.es6",
-		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/helpers/formfield.js"
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/analytics.js",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/Tern.sublime-keymap",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/mixins/valid_clone.es6",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/Default (OSX).sublime-keymap",
+		"/Users/ben/Library/Application Support/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/mixins/valid_clone.es6",
+		"/Users/ben/Downloads/ArthurTemplate.html",
+		"/var/folders/nq/1hwv9jz90bggdmv7w9mkqp1m0000gp/T/com.skitch.skitch/DMDD8BCBEEB-0BA0-4422-BE27-299016015820/package_com_windsorcircle_commerce_datatransfer_re_—_wcui.png",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/templates/template.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/automator_controls.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/emailconfirmer.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/editemailheader.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/base.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/api/api_automator_emails.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/emailpreview.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/url_builder.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/automators_management.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/modal.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/summary.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/summary_list.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/api/api_automators.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/page.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/socialpicker.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wclib/wclib/initdb/json/automator_templates/automator_templates.json",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/common/social_picker.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/checkbox.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/checkbox.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/replenishment.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/properties/replenishment.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/html.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/editproductlist.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/select.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/options.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/store/AppAutomators.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/utility.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email_template.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/segment_template.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/store_automators.py",
+		"/Users/ben/Code/Windsor/scripts/templateparser.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/action_center/edit_action.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/tests/views/action_center/edit_action.spec.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/gulpfile.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/automator.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/emails.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/routers/automator_router.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/emailsummary.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/form.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/form.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/modules/content_block.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/layout.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/automator.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/helpers/formfields.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/input.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/automator_resources/replenishment.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/intro.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/productpicker.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/automator_workflow.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/modals/mergetag.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/sendtestemail.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/store/AppAutomatorsEmails.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/emailgrouper.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/properties/automators_management.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/emailgrouping.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/schedule_date_converter.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/behaviors/update_schedule.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/scheduleemails.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/sendtestemail.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/schedule.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/config.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/confirmemails.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/groupemails.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/store/AppSegment.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/liveautomator.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/templateselector.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/emailscheduler.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/store/customfieldmodal.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/emailbuilder.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/rule_input.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/rule.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/vendor/base_libs.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/customtemplate.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/templateselect.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/customizetemplate.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/builder.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/replenishment/buildemails.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/toasters.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/controls.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/backbone_config.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/modules/diagrams.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/resources.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/templateselector.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/main.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/url_builder.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/email_summary.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/modals.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/base_modal.js",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/modals/singlemergetag.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/variables/color.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/components/input.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/base/typography.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/modules/merge_tag_picker.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/editemailheader.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/modals/mergetag.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/automators/merge_tag.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/builder/rule_input.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/lib/jquery_shim.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcdb_model/wcdb_model/wcui/AutomatorTemplates.py",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/templates/automators/replenishment.pt",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/collections/automator_templates.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/container.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/summary.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/widgets/sidenav.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/modules/panel.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/segments/download_modal.hbs",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/segments/builder/preview_modal.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css/modules/labels.less",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/automator/widgets/sidenav.es6",
+		"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/automator/available.hbs"
 	],
 	"find":
 	{
@@ -627,6 +735,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"*.less",
 			"",
 			"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js",
 			"/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/css",
@@ -675,134 +784,134 @@
 		"case_sensitive": true,
 		"find_history":
 		[
-			"construct",
-			"addAllFromAPI",
-			"AddAllFromAPI",
-			"custom-made",
-			"has not yet",
-			"45",
-			"activity-is-custom",
-			"></wc-checkbox><label>",
-			"model",
-			"Coupon Code",
-			"preview_string",
-			"who have",
-			"button",
-			"Currency",
-			"this.model",
-			"this.ui.start",
-			"view",
-			"wide",
-			"Wide",
-			"mlv_by_number_of_purc",
-			"30px",
-			"        }",
-			"input type=\"checkbox\"",
-			"Input",
-			"components/input",
-			"components/select",
-			"less",
-			"moment",
-			"start",
-			"input",
-			"downloadClients",
-			"subrule_type",
-			"active",
-			"shows renders",
-			"makeEstimate",
-			"expect",
-			"HEAD",
-			"download",
-			"closemodal",
-			",",
-			"','",
-			"self.chart",
-			"def chart",
-			"'chart'",
-			"percent_revenue",
-			"num",
-			"<input type=\"checkbox\">",
-			"height",
-			"sure you want to deactivate",
-			"WC_Order_Date",
-			"WC_Order_date",
-			"lib/permissions",
-			"'permissions'",
-			"Custom Segment",
-			"Radio",
-			"radio",
-			"createModal",
-			"creator",
-			"Segment_Name",
-			"arg2",
-			"arg1",
-			"\"",
-			",",
-			"([{},{},{},{},{},{}]);",
-			"OK",
-			"filter",
-			"Frequency_Actual",
-			"collections/headline_stat",
-			"charts",
-			"/charts",
-			"segment_tooltips",
-			"SegmentsContainer",
-			"currency",
-			"segments_summary",
-			"SegmentSummaryCollection",
-			"addHistorical",
-			"last_edited",
-			"segment_builder",
-			"WC_Product_Title",
+			"WC_API_IO_KEY",
+			"p",
+			"eq(",
+			"    • ",
+			"tern",
+			"adminApp",
+			"getSubModelandCollectionAttrs",
+			"Backbone",
+			"{{store",
+			"{{title",
+			"currentUrl",
+			"currentURL",
+			"this.subCollection",
+			"this.subCOllection",
+			"endValidation",
+			"goToCurrentPage",
+			"drillDown",
+			"getCatalogGroups",
+			"METHOD_NAME",
+			"LOCK_OBJECT",
+			"windsorcircle",
+			"METHOD_NAME",
+			"state.get('url')",
+			"checkValidation",
+			"goToCurrentPage",
+			"checkValidation",
+			"conditionallyValidateBasedOnPage",
+			"attrib",
+			"getInvalidAttrsForModel",
+			"emailAttrs",
+			"Email",
+			"this.subAttrsToBeExcluded",
+			"automatorsURL",
+			"jshint",
+			"getEmailIndex",
+			"_get_automator_data",
+			"render",
+			"add(",
+			"addd(",
+			"5",
+			"icon",
+			"socialicon",
+			"newNetwork",
+			"storeModel",
+			"updateCollectionFromCheckboxes",
+			"footer_text",
+			"redrawList",
+			"windowProducts",
 			"num_products",
-			"Selector",
-			"'Segment Analytics'",
-			"switch",
+			"send_heads_up_email",
+			"send_heads_up",
+			"drillDown",
+			"goToCurrentPage",
+			"state",
+			"showDrillDown",
+			"editEmail",
+			"drilldown_screen",
+			"drillDown",
+			"goToDrillDown",
+			"market",
+			"marketing_email",
+			"popOut",
+			"label",
+			"half-",
+			"colorpair",
+			"color",
+			"checkValidation",
+			"\"",
+			"ins",
+			"Convert",
+			"name",
+			"\"",
+			"secondary",
+			"\"",
+			"doctype",
+			"secondar",
+			"body",
+			"body_color",
+			"Body",
+			"selector",
+			"p",
+			"diagrams",
+			"diagram",
+			"imgs",
+			"_template",
+			"AutomatorEmails",
+			"email",
+			"render",
+			"test_send",
+			"post",
+			"index",
+			"preview-tag",
+			"emails",
+			"royalblue",
+			"disableInput",
+			"position",
+			"ProductCollection",
+			"templateID",
+			"template",
+			"params",
+			"render",
+			"status",
+			"f26652",
+			"7fafde",
+			"009c76",
+			"prod",
+			"network.id",
+			"width",
+			"productOptions",
+			"repleni",
+			"ProductPickerControls",
+			"this.render",
+			"showBuilder",
+			"hasPermission",
+			"amartinez",
+			"avery",
+			"ESP",
+			"pushed_to_esp",
+			"pushedtoesp",
+			"_update_segment_from_request",
+			"self.model",
+			"pdb",
+			"sql_def",
+			"fnc_app_segments_history",
 			"model",
-			"9 Pillars",
-			"Sparkl",
-			"buildSparklineData",
-			"getData",
-			"_.pad",
-			"this",
-			"filteredClone",
-			"Score",
-			"isNumeric",
-			"Integer",
-			"'WC",
-			"stickit",
-			"jasmine-core",
-			"jasmine",
-			"API",
-			"segment-list-header",
-			"showChild",
-			"SegmentsListView",
-			"contentTop",
-			"safeRender",
-			"page_content",
-			"campaigns",
-			"model",
-			"+",
-			">+",
-			"'",
-			"\n'<",
-			"tableTab",
-			"updateName",
-			"$('.preview-js')",
-			"saveSegment",
-			"value",
-			"return false",
-			"errorVal =",
-			"args",
-			"sortByColumnClass",
-			"'update'",
-			"select a customer rank",
-			"buildTimePeriodSelect",
-			"select",
-			"input",
-			"flex",
-			"shortname",
-			"200px"
+			"pushedtoesp",
+			"amartinez",
+			"pushtoesp"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -810,6 +919,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\\\"",
 			"\n        ",
 			") ",
 			"        ",
@@ -830,122 +940,16 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/action_center/page.js",
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/services/automator_workflow.es6",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 721,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								97,
-								97
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"WordCountSyntax": "javascript",
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true,
-							"vintage":
-							{
-								"action": null,
-								"action_count": "",
-								"mode": "mode_normal",
-								"motion": null,
-								"motion_count": "",
-								"must_capture_register_name": false,
-								"partial_sequence": "",
-								"register": "\"",
-								"sequence": "",
-								"xpos": 38
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/views/action_center/action.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6619,
+						"buffer_size": 9727,
 						"regions":
 						{
 						},
@@ -959,29 +963,9 @@
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"WordCountSyntax": "javascript",
+							"WordCountSyntax": "javascript (babel)",
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -992,6 +976,21 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1002,31 +1001,151 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"highlight_line": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true,
 							"vintage":
 							{
 								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 21
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/base.es6",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "javascript (babel)",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"highlight_line": true,
+							"history_list_is_closing": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
 								"action": null,
 								"action_count": "",
 								"mode": "mode_normal",
@@ -1049,57 +1168,27 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/components/button.es6",
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/admin.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1325,
+						"buffer_size": 1122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								897,
-								897
+								329,
+								329
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"WordCountSyntax": "javascript (babel)",
+							"WordCountSyntax": "javascript",
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1110,21 +1199,850 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 6
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 273,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "plain text",
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							},
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/dashboard.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								561,
+								561
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "javascript",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/store_automators.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "python",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 581.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/views/api/api_automator_emails.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1908,
+								1908
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "python",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 37
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 835.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email.es6",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "javascript (babel)",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"highlight_line": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/replenishment.es6",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2086,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "javascript (babel)",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"highlight_line": true,
+							"history_list_is_closing": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email_template.es6",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountSyntax": "javascript (babel)",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
@@ -1145,46 +2063,59 @@
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 0
+								"xpos": 13
 							}
 						},
-						"translation.x": 0.0,
-						"translation.y": 308.0,
+						"translation.x": -0.0,
+						"translation.y": 748.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/Users/ben/Code/scratch/resume.md",
+					"buffer": 11,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/properties/replenishment.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8042,
+						"buffer_size": 17829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6405,
-								6405
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "plain text",
-							"auto_name": "Sarah Miller",
+							"WordCountSyntax": "javascript",
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1195,53 +2126,43 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"highlight_line": true,
+							"history_list_is_closing": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
 							"vintage":
 							{
 								"_vintageous_glue_until_normal_mode": false,
-								"_vintageous_non_interactive": false,
-								"_vintageous_processing_notation": false,
 								"action": null,
 								"action_count": "",
 								"mode": "mode_normal",
@@ -1252,44 +2173,84 @@
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 788
+								"xpos": 0
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 2510.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/templates/action_center/action.hbs",
+					"buffer": 10,
+					"file": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators/email_template.es6",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 841,
+						"buffer_size": 2388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								686,
-								686
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"WordCountSyntax": "handlebars",
+							"WordCountSyntax": "javascript (babel)",
 							"bh_regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1299,85 +2260,43 @@
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex_content"
 							],
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true,
 							"vintage":
 							{
+								"_vintageous_glue_until_normal_mode": false,
 								"action": null,
 								"action_count": "",
 								"mode": "mode_normal",
 								"motion": null,
 								"motion_count": "",
 								"must_capture_register_name": false,
+								"normal_insert_count": "1",
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 13
+								"xpos": 27
 							}
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -1392,18 +2311,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.931057866184,
 			1.0
 		],
 		"rows":
@@ -1441,7 +2353,7 @@
 	"project": "wcui.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1451,516 +2363,516 @@
 		"selected_items":
 		[
 			[
-				"action.hbs",
-				"wcui-js/templates/action_center/action.hbs"
+				"magento.",
+				"wcui-python/views/templates/documentation/track/magento.pt"
 			],
 			[
-				"editacitn",
-				"wcui-js/views/action_center/edit_action.js"
+				"replenishment",
+				"wcui-js/models/automators/replenishment.es6"
 			],
 			[
-				"action.js",
-				"wcui-js/views/action_center/action.js"
+				"apiautomators",
+				"wcui-python/views/api/api_automator_emails.py"
 			],
 			[
-				"actioncenterpage",
-				"wcui-js/views/action_center/page.js"
+				"storeautoma",
+				"wcui-python/views/store_automators.py"
 			],
 			[
-				"actioncenter.js",
-				"wcui-js/action_center.js"
+				"admi.",
+				"wcui-js/admin.js"
 			],
 			[
-				"collectionact",
-				"wcui-js/collections/action.js"
+				"admjs",
+				"wcui-js/admin.js"
 			],
 			[
-				"action",
-				"wcui-js/models/action.js"
+				"anal",
+				"wcui-js/analytics.js"
 			],
 			[
-				"appsegment",
-				"wcdb_model/store/AppSegment.py"
+				"validclon",
+				"wcui-js/models/mixins/valid_clone.es6"
 			],
 			[
-				"segment.es6",
-				"wcui-js/behaviors/segment.es6"
+				"email.es",
+				"wcui-js/models/automators/email.es6"
 			],
 			[
-				"storesegment",
-				"wcui-python/views/store_segments.py"
+				"emailtempla",
+				"wcui-js/models/automators/email_template.es6"
 			],
 			[
-				"segmentmanagement",
-				"wcui-css/components/segmentsmanagement.less"
+				"template.es",
+				"wcui-js/views/segments/templates/template.es6"
 			],
 			[
-				"summary.es6",
-				"wcui-js/views/segments/summary.es6"
+				"storeautomat",
+				"wcui-python/views/store_automators.py"
 			],
 			[
-				"summary.hbs",
-				"wcui-js/templates/segments/summary.hbs"
+				"repleni",
+				"wcui-js/properties/replenishment.js"
 			],
 			[
-				"urlbuild",
-				"wcui-js/lib/url_builder.js"
+				"replensment.es6",
+				"wcui-js/models/automators/replenishment.es6"
 			],
 			[
-				"toaste",
-				"wcui-css/components/toaster.less"
+				"automatorwor",
+				"wcui-js/services/automator_workflow.es6"
 			],
 			[
-				"gulpfile",
-				"wcui-base/gulpfile.js"
+				"base.es6",
+				"wcui-js/models/automators/base.es6"
 			],
 			[
-				"segmentsummary",
-				"wcui-js/collections/segment_summary.es6"
+				"email",
+				"wcui-js/models/automators/email.es6"
 			],
 			[
-				"router",
-				"wcui-js/routers/segments_router.js"
+				"editaction.e",
+				"wcui-js/tests/views/action_center/edit_action.spec.js"
 			],
 			[
-				"segments.es",
-				"wcui-js/segments.es6"
+				"ediaction.es",
+				"wcui-js/views/action_center/edit_action.es6"
 			],
 			[
-				"list.es6",
-				"wcui-js/views/segments/list.es6"
+				"bae.es",
+				"wcui-js/models/automators/base.es6"
 			],
 			[
-				"listarea",
-				"wcui-js/views/segments/list_area.es6"
+				"replenishmen",
+				"wcui-js/models/automators/replenishment.es6"
 			],
 			[
-				"checkbox.spec",
-				"wcui-js/tests/components/checkbox.spec.es6"
+				"email.es6",
+				"wcui-js/models/automators/email.es6"
 			],
 			[
-				"checkbox.less",
-				"wcui-css/components/checkbox.less"
+				"emailtemp",
+				"wcui-js/models/automators/email_template.es6"
 			],
 			[
-				"download",
-				"wcui-js/templates/segments/download_modal.hbs"
-			],
-			[
-				"checkbox",
-				"wcui-js/components/checkbox.es6"
+				"replenis",
+				"wcui-js/models/automators/replenishment.es6"
 			],
 			[
 				"gulp",
 				"wcui-base/gulpfile.js"
 			],
 			[
-				"downloadmodal",
-				"wcui-js/templates/segments/download_modal.hbs"
+				"workfl",
+				"wcui-js/services/automator_workflow.es6"
 			],
 			[
-				"listheader",
-				"wcui-js/templates/segments/list_header.hbs"
+				"automatorwork",
+				"wcui-js/services/automator_workflow.es6"
 			],
 			[
-				"tooltipsetup",
-				"wcui-js/lib/tooltip_setup.js"
+				"emailpreview",
+				"wcui-js/views/automator/widgets/emailpreview.es6"
 			],
 			[
-				"setup.js",
-				"wcui-js/setup.js"
+				"apiaut",
+				"wcui-python/views/api/api_automator_emails.py"
 			],
 			[
-				"checkob",
-				"wcui-js/components/checkbox.es6"
+				"apiautoo",
+				"wcui-python/views/api/api_automators.py"
 			],
 			[
-				"semgentmanage",
-				"wcui-css/components/segmentsmanagement.less"
+				"wclibautom",
+				"wclib/wclib/initdb/json/automator_templates/automator_templates.json"
 			],
 			[
-				"checkboxless",
-				"wcui-css/components/checkbox.less"
+				"modeltemplat",
+				"wcui-js/models/automators/email_template.es6"
 			],
 			[
-				"segmentmanless",
-				"wcui-css/components/segmentsmanagement.less"
+				"wclibautomato",
+				"wclib/wclib/initdb/json/automator_templates/automator_templates.json"
 			],
 			[
-				"segmentspy",
-				"wcui-python/views/store_segments.py"
+				"replenishme",
+				"wcui-js/properties/replenishment.js"
 			],
 			[
-				"store.py",
-				"wcui-python/views/store.py"
-			],
-			[
-				"loinpt",
-				"wcui-python/views/templates/login.pt"
-			],
-			[
-				"sor",
-				"wcui-js/views/sortable_table.js"
-			],
-			[
-				"dashboardjs",
-				"wcui-js/views/dashboard/page_content.js"
-			],
-			[
-				"dashboardsegments",
-				"wcui-js/templates/dashboard/overview/customer_segments_table.hbs"
-			],
-			[
-				"selectors.json",
-				"wclib/wclib/initdb/json/segment_builder_selectors/segment_builder_selectors.json"
-			],
-			[
-				"segmentbuilderoperator",
-				"wcdb_model/admin/SegmentBuilderOperator.py"
-			],
-			[
-				"selector.py",
-				"wcdb_model/admin/SegmentBuilderSelector.py"
-			],
-			[
-				"previewmodal",
-				"wcui-js/views/segments/builder/preview_modal.es6"
-			],
-			[
-				"segmentbuilderselect",
-				"wclib/wclib/initdb/json/segment_builder_selectors/segment_builder_selectors.json"
-			],
-			[
-				"buttonspec",
-				"wcui-js/tests/components/button.spec.es6"
+				"replenish",
+				"wcui-js/properties/replenishment.js"
 			],
 			[
 				"chec",
+				"wcui-css/components/checkbox.less"
+			],
+			[
+				"checkbox",
 				"wcui-js/components/checkbox.es6"
 			],
 			[
-				"operators.json",
-				"wclib/wclib/initdb/json/segment_builder_operators/segment_builder_operators.json"
+				"socialpicker",
+				"wcui-js/templates/common/social_picker.hbs"
 			],
 			[
-				"selectos.js",
-				"wclib/wclib/initdb/json/segment_builder_selectors/segment_builder_selectors.json"
+				"socialp",
+				"wcui-js/components/socialpicker.es6"
 			],
 			[
-				"wcinput",
-				"wcui-js/components/input.es6"
+				"automator",
+				"wcui-js/automators_management.es6"
 			],
 			[
-				"listheader.es6",
-				"wcui-js/views/segments/list_header.es6"
+				"socialpic",
+				"wcui-js/components/socialpicker.es6"
 			],
 			[
-				"downloadmoda",
-				"wcui-js/views/segments/download_modal.es6"
+				"base.es",
+				"wcui-js/models/automators/base.es6"
 			],
 			[
-				"summaryspec",
-				"wcui-js/tests/views/segments/summary.spec.es6"
+				"autmodal.e",
+				"wcui-js/views/automator/modal.es6"
 			],
 			[
-				"selectors",
-				"wclib/wclib/initdb/json/segment_builder_selectors/segment_builder_selectors.json"
+				"summarylist",
+				"wcui-js/views/automator/summary_list.es6"
 			],
 			[
-				"wcdbchart",
-				"wcdb_model/wcui/Chart.py"
+				"storeautom",
+				"wcui-python/views/store_automators.py"
 			],
 			[
-				"wcdbmodelpanel",
-				"wcdb_model/wcui/AnalyticsPanel.py"
+				"automatorsummar",
+				"wcui-js/views/automator/summary_list.es6"
 			],
 			[
-				"button",
-				"wcui-js/components/button.es6"
+				"summary.es6",
+				"wcui-js/views/automator/summary.es6"
 			],
 			[
-				"wclibsecur",
-				"wclib/wclib/security.py"
+				"modales",
+				"wcui-js/views/automator/modal.es6"
 			],
 			[
-				"input.",
-				"wcui-js/components/input.es6"
+				"urlbuil",
+				"wcui-js/lib/url_builder.es6"
 			],
 			[
-				"checkb",
-				"wcui-js/components/checkbox.es6"
+				"automatorma",
+				"wcui-js/automators_management.es6"
 			],
 			[
-				"inpu.less",
-				"wcui-css/components/input.less"
+				"automatorpage",
+				"wcui-js/views/automator/page.es6"
 			],
 			[
-				"segmentmana",
-				"wcui-css/components/segmentsmanagement.less"
+				"automatores6",
+				"wcui-js/automator.es6"
+			],
+			[
+				"option.es",
+				"wcui-js/views/automator/widgets/options.es6"
+			],
+			[
+				"select.hbs",
+				"wcui-js/templates/automator/replenishment/select.hbs"
+			],
+			[
+				"producthbs",
+				"wcui-js/templates/automator/replenishment/editproductlist.hbs"
+			],
+			[
+				"html",
+				"wcui-js/views/automator/widgets/html.es6"
+			],
+			[
+				"replenishment.",
+				"wcui-js/models/automators/replenishment.es6"
+			],
+			[
+				"automatoremails",
+				"wcui-python/views/api/api_automator_emails.py"
+			],
+			[
+				"router",
+				"wcui-js/routers/automator_router.es6"
+			],
+			[
+				"emailsummar",
+				"wcui-js/templates/automator/widgets/emailsummary.hbs"
+			],
+			[
+				"confirme",
+				"wcui-js/views/automator/widgets/emailconfirmer.es6"
+			],
+			[
+				"bautomator",
+				"wcui-js/behaviors/automator_controls.es6"
+			],
+			[
+				"appautom",
+				"wcdb_model/store/AppAutomators.py"
+			],
+			[
+				"modelemail.e",
+				"wcui-js/models/automators/email.es6"
+			],
+			[
+				"emails.",
+				"wcui-js/collections/emails.es6"
+			],
+			[
+				"replenishment.es",
+				"wcui-js/models/automators/replenishment.es6"
+			],
+			[
+				"editemailhe",
+				"wcui-js/views/automator/widgets/editemailheader.es6"
+			],
+			[
+				"behavioraut",
+				"wcui-js/behaviors/automator_controls.es6"
+			],
+			[
+				"utilit",
+				"wcui-css/utility.less"
+			],
+			[
+				"modeltemplate",
+				"wcui-js/models/automators/email_template.es6"
+			],
+			[
+				"templatees6",
+				"wcui-js/models/segment_template.es6"
+			],
+			[
+				"automatorless",
+				"wcui-css/automator.less"
 			],
 			[
 				"layout.",
 				"wcui-css/layout.less"
 			],
 			[
-				"componenbuttoless",
-				"wcui-css/components/buttons.less"
+				"contentblo",
+				"wcui-css/modules/content_block.less"
 			],
 			[
-				"baselib",
-				"wcui-js/vendor/base_libs.js"
+				"automator.les",
+				"wcui-css/automator.less"
 			],
 			[
-				"check",
-				"wcui-js/components/checkbox.es6"
+				"contetnb",
+				"wcui-css/modules/content_block.less"
+			],
+			[
+				"util",
+				"wcui-css/utility.less"
+			],
+			[
+				"contentbl",
+				"wcui-css/modules/content_block.less"
+			],
+			[
+				"form.es",
+				"wcui-js/views/automator/widgets/form.es6"
+			],
+			[
+				"form.hbs",
+				"wcui-js/templates/automator/widgets/form.hbs"
+			],
+			[
+				"formfield",
+				"wcui-js/templates/helpers/formfields.es6"
 			],
 			[
 				"input",
 				"wcui-js/components/input.es6"
 			],
 			[
-				"ruleinput",
-				"wcui-js/views/segments/builder/rule_input.es6"
-			],
-			[
-				"rule",
-				"wcui-js/views/segments/builder/rule.es6"
-			],
-			[
-				"loginet",
-				"wcui-css/login_et.less"
-			],
-			[
-				"loginless",
-				"wcui-css/login.less"
-			],
-			[
-				"list",
-				"wcui-js/views/segments/list.es6"
-			],
-			[
-				"segmen",
-				"wcui-js/segments.es6"
-			],
-			[
-				"actioncenterless",
-				"wcui-css/action_center.less"
-			],
-			[
-				"admin.less",
-				"wcui-css/admin.less"
-			],
-			[
-				"graphs.less",
-				"wcui-css/components/graphs.less"
-			],
-			[
-				"login.less",
-				"wcui-css/login.less"
-			],
-			[
-				"input.less",
-				"wcui-css/components/input.less"
-			],
-			[
-				"segmentbuilder.less",
-				"wcui-css/components/segmentbuilder.less"
-			],
-			[
-				"segmentpreviewless",
-				"wcui-css/components/segmentpreview.less"
-			],
-			[
-				"segmentmagementless",
-				"wcui-css/components/segmentsmanagement.less"
-			],
-			[
-				"segmenttemplates.less",
-				"wcui-css/components/segmenttemplates.less"
-			],
-			[
-				"selectless",
-				"wcui-css/components/select.less"
-			],
-			[
-				"wizar",
-				"wcui-css/components/wizard.less"
-			],
-			[
-				"input.es6",
+				"input.es",
 				"wcui-js/components/input.es6"
 			],
 			[
-				"downloadm",
-				"wcui-js/views/segments/download_modal.es6"
+				"automator.less",
+				"wcui-css/automator.less"
 			],
 			[
-				"downloadmodal.hbs",
-				"wcui-js/templates/segments/download_modal.hbs"
+				"formfi",
+				"wcui-js/templates/helpers/formfields.es6"
 			],
 			[
-				"tables",
-				"wcui-css/components/tables.less"
+				"emails",
+				"wcui-js/collections/emails.es6"
 			],
 			[
-				"products.less",
-				"wcui-css/products.less"
+				"replenes6",
+				"wcui-js/models/automators/replenishment.es6"
 			],
 			[
-				"controlshbs",
-				"wcui-js/templates/segments/builder_controls.hbs"
+				"automatorbase",
+				"wcui-js/models/automators/base.es6"
 			],
 			[
-				"customfields",
-				"wcui-js/views/store/customFieldsTable.js"
+				"automator.es",
+				"wcui-js/automator.es6"
 			],
 			[
-				"segmentmanage",
-				"wcui-css/components/segmentsmanagement.less"
+				"autowo",
+				"wcui-js/services/automator_workflow.es6"
 			],
 			[
-				"campaignsummar",
-				"wcui-js/models/campaign_summary.es6"
+				"automatorcontr",
+				"wcui-js/behaviors/automator_controls.es6"
 			],
 			[
-				"downloadmodalform",
-				"wcui-js/templates/segments/download_modal_form.hbs"
+				"automatorworkf",
+				"wcui-js/services/automator_workflow.es6"
 			],
 			[
-				"viewstoresegment",
-				"wcui-python/views/store_segments.py"
+				"productpicker.es",
+				"wcui-js/views/automator/widgets/productpicker.es6"
 			],
 			[
-				"viesegmentsummary",
-				"wcui-js/views/segments/summary.es6"
+				"grouping",
+				"wcui-js/views/automator/widgets/emailgrouping.es6"
 			],
 			[
-				"downloadmo",
-				"wcui-js/views/segments/download_modal.es6"
+				"mergetaghb",
+				"wcui-js/templates/automator/modals/mergetag.hbs"
 			],
 			[
-				"dragga",
-				"wcui-js/behaviors/draggable.es6"
+				"replen",
+				"wcui-js/properties/replenishment.js"
 			],
 			[
-				"trackingheader",
-				"wcui-js/views/tracking_center/tracking_header.es6"
+				"testemailhbs",
+				"wcui-js/templates/automator/widgets/sendtestemail.hbs"
 			],
 			[
-				"segmentpreviewspec",
-				"wcui-js/tests/views/segments/builder/preview_modal.spec.es6"
+				"testem",
+				"wcui-js/views/automator/widgets/sendtestemail.es6"
 			],
 			[
-				"summary.es",
-				"wcui-js/views/segments/summary.es6"
+				"scheduleema",
+				"wcui-js/templates/automator/replenishment/scheduleemails.hbs"
 			],
 			[
-				"viewsegmentspec",
-				"wcui-js/tests/views/segments/summary.spec.es6"
+				"automatmanjs",
+				"wcui-js/properties/automators_management.js"
 			],
 			[
-				"index.",
-				"wcui-js/tests/index.js"
+				"modelautemails6",
+				"wcui-js/models/automators/email.es6"
 			],
 			[
-				"summary.spec",
-				"wcui-js/tests/views/segments/summary.spec.es6"
+				"confirmer",
+				"wcui-js/views/automator/widgets/emailconfirmer.es6"
 			],
 			[
-				"segmenssummr",
-				"wcui-js/views/segments/summary.es6"
+				"behaviorauto",
+				"wcui-js/behaviors/automator_controls.es6"
 			],
 			[
-				"previewmodalsp",
-				"wcui-js/tests/views/segments/builder/preview_modal.spec.es6"
+				"moemail",
+				"wcui-js/models/automators/email.es6"
 			],
 			[
-				"package.json",
-				"wcui-base/package.json"
+				"confirmh",
+				"wcui-js/templates/automator/replenishment/confirmemails.hbs"
 			],
 			[
-				"campainsumam",
-				"wcui-js/models/campaign_summary.es6"
+				"emailconfi",
+				"wcui-js/views/automator/widgets/emailconfirmer.es6"
 			],
 			[
-				"previewmodal.es",
-				"wcui-js/views/segments/builder/preview_modal.es6"
+				"grouphbs",
+				"wcui-js/templates/automator/widgets/emailgrouper.hbs"
 			],
 			[
-				"previewmodal.es6",
-				"wcui-js/tests/views/segments/builder/preview_modal.spec.es6"
+				"groupi",
+				"wcui-js/views/automator/widgets/emailgrouping.es6"
 			],
 			[
-				"trackpage.",
-				"wcui-js/views/tracking_center/page.es6"
+				"baselibs",
+				"wcui-js/vendor/base_libs.js"
 			],
 			[
-				"tempage.es6",
-				"wcui-js/views/segments/templates/page.es6"
+				"widschedul",
+				"wcui-js/templates/automator/widgets/schedule.hbs"
 			],
 			[
-				"page.es6",
-				"wcui-js/views/segments/page.es6"
+				"emailsc",
+				"wcui-js/views/automator/widgets/emailscheduler.es6"
 			],
 			[
-				"ruleinput.es6",
-				"wcui-js/views/segments/builder/rule_input.es6"
+				"schedulhbs",
+				"wcui-js/templates/automator/replenishment/scheduleemails.hbs"
 			],
 			[
-				"builderrule.es6",
-				"wcui-js/views/segments/builder/rule.es6"
+				"schedulehbs",
+				"wcui-js/templates/automator/replenishment/scheduleemails.hbs"
 			],
 			[
-				"previewmodales",
-				"wcui-js/views/segments/builder/preview_modal.es6"
+				"behaviorsche",
+				"wcui-js/behaviors/update_schedule.es6"
 			],
 			[
-				"builderpage",
-				"wcui-js/views/segments/builder/page.es6"
+				"scheduledate",
+				"wcui-js/lib/schedule_date_converter.es6"
 			],
 			[
-				"filterareaes6",
-				"wcui-js/views/segments/builder/filter_area.es6"
+				"updatesc",
+				"wcui-js/behaviors/update_schedule.es6"
 			],
 			[
-				"controlses6",
-				"wcui-js/views/segments/builder/controls.es6"
+				"wdigessched",
+				"wcui-js/templates/automator/widgets/schedule.hbs"
 			],
 			[
-				"multiinputext",
-				"wcui-js/views/common/multi_input_extension.es6"
+				"config",
+				"wcui-js/config.js"
 			],
 			[
-				"muliinput",
-				"wcui-js/views/common/multi_input.es6"
+				"schedule.es6",
+				"wcui-js/views/automator/widgets/emailscheduler.es6"
 			],
 			[
-				"lisspec",
-				"wcui-js/tests/views/segments/list.spec.es6"
+				"appautomat",
+				"wcdb_model/store/AppAutomatorsEmails.py"
 			],
 			[
-				"builrule.spec.es6",
-				"wcui-js/tests/views/segments/builder/rule.spec.es6"
+				"jsontemplate",
+				"wclib/wclib/initdb/json/automator_templates/automator_templates.json"
 			],
 			[
-				"buildfilter",
-				"wcui-js/tests/views/segments/builder/filter_area.spec.es6"
+				"apiautoma",
+				"wcui-python/views/api/api_automator_emails.py"
 			],
 			[
-				"segmentmeta",
-				"wcui-js/tests/mock_services/segment_metadata.es6"
+				"modetemplat",
+				"wcui-js/models/automators/email_template.es6"
 			],
 			[
-				"segmentmetad",
-				"wcui-js/services/segment_metadata.es6"
+				"replenishment.js",
+				"wcui-js/properties/replenishment.js"
 			],
 			[
-				"selectspeces6",
-				"wcui-js/tests/components/select.spec.es6"
+				"emailbuild",
+				"wcui-js/views/automator/widgets/emailbuilder.es6"
 			],
 			[
-				"input.spec",
-				"wcui-js/tests/components/input.spec.es6"
+				"replenishmen.es",
+				"wcui-js/models/automators/replenishment.es6"
+			],
+			[
+				"input.e",
+				"wcui-js/components/input.es6"
+			],
+			[
+				"customtemplate",
+				"wcui-js/templates/automator/widgets/customtemplate.hbs"
 			]
 		],
 		"width": 0.0
@@ -2001,26 +2913,26 @@
 		"selected_items":
 		[
 		],
-		"width": 664.0
+		"width": 722.0
 	},
 	"selected_group": 0,
 	"settings":
 	{
-		"_vintageous_last_buffer_search": "custom-made",
-		"_vintageous_last_buffer_search_command": "vi_question_mark",
-		"_vintageous_last_char_search_command": "vi_f",
-		"_vintageous_last_character_search": "p",
+		"_vintageous_last_buffer_search": "Instal",
+		"_vintageous_last_buffer_search_command": "vi_slash",
+		"_vintageous_last_char_search_command": "vi_big_f",
+		"_vintageous_last_character_search": "M",
 		"_vintageous_reset_during_init": true,
 		"vintage":
 		{
-			"_cmdline_cd": "/Applications/Sublime Text.app/Contents/MacOS"
+			"_cmdline_cd": "/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/app/js/models/automators"
 		}
 	},
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 261.0,
+	"side_bar_visible": false,
+	"side_bar_width": 204.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

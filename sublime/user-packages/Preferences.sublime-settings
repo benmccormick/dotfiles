@@ -12,7 +12,7 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "solid",
-	"color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
 	"draw_white_space": "selection",
 	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro Medium",
@@ -21,13 +21,13 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
-		"jQuery",
+		"ASP",
+		"Bootstrap 3 Snippets",
 		"Color Highlighter",
 		"GitGutter",
-		"Vintage",
-		"Bootstrap 3 Snippets",
-		"ASP"
+		"jQuery",
+		"Markdown",
+		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"rulers":

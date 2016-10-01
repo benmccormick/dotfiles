@@ -1,0 +1,17 @@
+#!/bin/bash
+
+BASE=~/Code/projects/pullover
+cd $BASE 
+tmux start-server
+tmux has-session -t pulloverworkspace > /dev/null
+if [ $? -eq 1 ]; then
+tmux new-session -d -s pulloverworkspace -n code
+tmux split-window -v -p 15 -t pulloverworkspace:1 
+tmux send-keys -t pulloverworkspace:1.0 'atom .' C-m
+tmux send-keys -t pulloverworkspace:1.1 'npm run start-hot' C-m
+tmux new-window  -t pulloverworkspace:2 -n webpack
+tmux send-keys -t pulloverworkspace:2 'npm run hot-server' C-m
+tmux selectw -t 1
+tmux selectp -t 0
+fi
+tmux attach -t pulloverworkspace

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+BASE=~/Dropbox/blog_drafts/
+cd $BASE 
+tmux start-server
+tmux has-session -t blogworkspace > /dev/null
+if [ $? -eq 1 ]; then
+tmux new-session -d -s blogworkspace -n wcui
+tmux new-session -d -s blogworkspace -n drafts
+tmux new-window  -t blogworkspace:2 -n blogdir
+tmux send-keys -t blogworkspace:2 'cd ~/Blog ' C-m
+tmux split-window -v -p 15 -t blogworkspace:1 
+tmux send-keys -t blogworkspace:1.0 'vim -O .' C-m 
+fi
+tmux attach -t blogworkspace

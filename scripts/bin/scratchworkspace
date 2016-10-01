@@ -1,0 +1,10 @@
+#!/bin/bash
+
+BASE=~/dotfiles
+cd $BASE 
+tmux start-server
+tmux has-session -t scratchworkspace > /dev/null
+if [ $? -eq 1 ]; then
+tmux new-session -d -s scratchworkspace -n dotfiles
+fi
+tmux attach -t scratchworkspace

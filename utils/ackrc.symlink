@@ -6,8 +6,6 @@ hbs=hbs
 js=js,es6
 
 
---ignore-dir=/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js
---ignore-dir=/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/css
---ignore-dir=wcui/static/js
---ignore-dir=wcui/static/css
+--ignore-dir=coverage
+--ignore-dir=wcui/app/js/bower_components
 

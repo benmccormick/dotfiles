@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[
-<sup id="fnref:$1">[$1](#fn:$1)</sup>$2
-]]></content>
-    <tabTrigger>fnr</tabTrigger>
-    <scope>text.html.markdown</scope>
-</snippet>
-
-

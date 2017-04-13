@@ -1,13 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
-Plug 'noahfrederick/vim-neovim-defaults'
 Plug 'altercation/vim-colors-solarized'
 Plug 'othree/yajs'
 Plug 'mxw/vim-jsx'
 Plug 'dag/vim-fish'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
@@ -68,6 +67,7 @@ set expandtab
 
 set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visually
 set nowrap                            " Don't wrap lines
+set inccommand=nosplit
 
 " Scrolling
 set scrolloff=10
@@ -118,5 +118,9 @@ let $FZF_DEFAULT_COMMAND= 'ag -g ""'
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-set noshowmode
+" set noshowmode
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+
+"YCM
+let g:ycm_min_num_of_chars_for_completion = 3
+

@@ -9,7 +9,9 @@ set -gx ANALYTICS_KEY '/Users/ben/.config/analytics-api-d8a6e7a79f5c.json'
 set WCREGISTRY "registry.windsorcircle.com"
 set DOCKER_TLS_HOSTNAME "localhost"
 
-set -gx PATH $PATH ~/Code/Windsor/scripts
+if test -d ~/Code/Windsor/scripts
+    set -gx PATH $PATH ~/Code/Windsor/scripts
+end
 
 set -g theme_nerd_fonts yes
 # set -g theme_color_scheme solarized-light

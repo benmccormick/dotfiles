@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " On-demand loading
 Plug 'altercation/vim-colors-solarized'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'othree/yajs'
 Plug 'mxw/vim-jsx'
 Plug 'dag/vim-fish'
@@ -34,9 +35,9 @@ call plug#end()
 syntax on
 syntax enable
 let g:jsx_ext_required = 0
-" set termguicolors
+"set termguicolors
 set background=light
-colorscheme solarized
+colorscheme PaperColor
 
 
  "Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)

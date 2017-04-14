@@ -1,0 +1,15 @@
+{
+  "name": "hyper-plugins",
+  "description": "Auto-generated from `~/.hyper.js`!",
+  "private": true,
+  "version": "0.0.1",
+  "repository": "zeit/hyper",
+  "license": "MIT",
+  "homepage": "https://hyper.is",
+  "dependencies": {
+    "hyperlinks": "latest",
+    "hyperterm-dibdabs": "latest",
+    "hypercwd": "latest",
+    "hyper-papercolor": "latest"
+  }
+}

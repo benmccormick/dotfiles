@@ -13,7 +13,7 @@ set -gx PATH $PATH ~/Code/Windsor/scripts
 
 set -g theme_nerd_fonts yes
 # set -g theme_color_scheme solarized-light
-set -g theme_color_scheme zenburn
+#set -g theme_color_scheme zenburn
 
 function fish_user_key_bindings
   fish_vi_key_bindings

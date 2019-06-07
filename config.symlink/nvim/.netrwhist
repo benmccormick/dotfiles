@@ -1,9 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/ben/Blog/benmccormickorg'
-let g:netrw_dirhist_2='/Users/ben/.config/nvim'
-let g:netrw_dirhist_3='/Users/ben/Code/Windsor/wcui_dev/src/wcui/wcui/static/js/templates/automator/widgets'
-let g:netrw_dirhist_4='/Users/ben/dotfiles/vim/vim.symlink/UltiSnips/python'
-let g:netrw_dirhist_5='/Users/ben/Code/Windsor/wcui_dev/src/wcui'
-let g:netrw_dirhist_6='/Users/ben/Blog/benmccormickorg/public/sw'
-let g:netrw_dirhist_7='/Users/ben/Code/Windsor/segment/wc_btt_script/src'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/ben/Code/Windsor/scripts'
+let g:netrw_dirhist_2='/Users/ben/Code/Windsor/wcui_docker/playbooks/tasks_docker'
+let g:netrw_dirhist_3='/Users/ben/Code/Windsor/whatcounts/projects/tests_katalon/.git'
+let g:netrw_dirhist_4='/Users/ben/Code/scratch/vscode-remote-try-rails/.git'

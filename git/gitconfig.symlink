@@ -36,6 +36,7 @@
     s = status
     p = push
     b = branch
+    credit = blame
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f

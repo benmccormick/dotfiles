@@ -1,8 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
-Plug 'altercation/vim-colors-solarized'
-Plug 'NLKNguyen/papercolor-theme'
+"Plug 'altercation/vim-colors-solarized'
+"Plug 'NLKNguyen/papercolor-theme'
+"Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'othree/yajs'
 Plug 'mxw/vim-jsx'
 Plug 'dag/vim-fish'
@@ -22,10 +23,12 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mileszs/ack.vim'
 Plug 'moll/vim-node'
-Plug 'neomake/neomake'
 Plug 'airblade/vim-gitgutter'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'SirVer/ultisnips'
+Plug 'w0rp/ale'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'dracula/vim'
 
 
 " Initialize plugin system
@@ -36,8 +39,8 @@ syntax on
 syntax enable
 let g:jsx_ext_required = 0
 "set termguicolors
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme dracula
 
 
  "Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
@@ -108,15 +111,11 @@ let g:UltiSnipsExpandTrigger="<Leader><Leader>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-"NeoMake
-autocmd! BufWritePost * Neomake
-let g:neomake_javascript_enabled_makers = ['eslint']
-
 "FZF
 let $FZF_DEFAULT_COMMAND= 'ag -g ""'
 
 "Airline
-let g:airline_theme='solarized'
+let g:airline_theme='onehalflight'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 " set noshowmode
@@ -125,3 +124,20 @@ let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 "YCM
 let g:ycm_min_num_of_chars_for_completion = 3
 
+" ALE
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+
+" Set this setting in vimrc if you want to fix files automatically on save.
+" This is off by default.
+let g:ale_fix_on_save = 1
+map <leader><leader> :ALEGoToDefinition<cr>
+
+
+"DEOPLETE
+
+let g:deoplete#enable_at_startup = 1
+
+let g:python2_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/usr/local/bin/python3'

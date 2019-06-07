@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "create-react-app": "^1.0.2"
+    "create-react-app": "^1.0.2",
+    "eslint": "^4.13.1",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.5.1",
+    "jscodeshift": "^0.3.31",
+    "node-gyp": "^3.7.0",
+    "prettier": "^1.9.2"
   }
 }

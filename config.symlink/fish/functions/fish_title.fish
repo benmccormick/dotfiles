@@ -1,1 +1,1 @@
-/Users/ben/.config/fisherman/pure/fish_title.fish
+/Users/benmccornick/.config/fisherman/pure/fish_title.fish

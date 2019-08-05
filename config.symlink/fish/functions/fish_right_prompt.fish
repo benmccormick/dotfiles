@@ -1,1 +1,1 @@
-/Users/ben/.config/fisherman/pure/fish_right_prompt.fish
+/Users/benmccornick/.config/fisherman/pure/fish_right_prompt.fish

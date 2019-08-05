@@ -1,6 +1,5 @@
-# Vim Related Aliases
-alias vim "nvim"
-alias n "nvim"
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+set CLICOLOR 1
 
 # Jest Related aliases
 alias j "npm test"

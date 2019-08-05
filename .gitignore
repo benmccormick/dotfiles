@@ -5,3 +5,4 @@ terminal/fish/fish_history
 .sublime-workspace
 .sublime-project
 Package Control.cache
+config.symlink/fish/functions/_pure*

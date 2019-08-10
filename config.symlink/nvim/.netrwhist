@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/ben/Code/Windsor/scripts'
-let g:netrw_dirhist_2='/Users/ben/Code/Windsor/wcui_docker/playbooks/tasks_docker'
-let g:netrw_dirhist_3='/Users/ben/Code/Windsor/whatcounts/projects/tests_katalon/.git'
-let g:netrw_dirhist_4='/Users/ben/Code/scratch/vscode-remote-try-rails/.git'

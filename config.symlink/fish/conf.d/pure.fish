@@ -1,0 +1,1 @@
+/Users/benmccornick/.config/fisherman/pure/conf.d/pure.fish

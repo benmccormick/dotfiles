@@ -1,5 +1,0 @@
-#!/bin/sh
-psql wcdb1 -c "delete from wc_bdhe.app_automator_product_queue"
-psql wcdb1 -c "delete from wc_bdhe.app_automators_emails"
-psql wcdb1 -c "delete from wc_bdhe.app_excluded_products"
-psql wcdb1 -c "delete from wc_bdhe.app_automators"

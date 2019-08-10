@@ -1,3 +1,6 @@
+# PATH
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
 # Set CLICOLOR if you want Ansi Colors in iTerm2 
 set CLICOLOR 1
 

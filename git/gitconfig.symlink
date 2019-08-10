@@ -1,6 +1,6 @@
 [user]
 	name = Ben McCormick
-	email = ben.mccormick@alumni.duke.edu
+	email = ben@kustomer.com
 [hub]
 	protocol = https
 [diff]
@@ -9,7 +9,7 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
-	editor = nvim
+	editor = vim
     pager = diff-so-fancy | less --tabs=4 -RFX
     #pager = bash -lc 'diff-highlight | less -r' -
 [color]
